@@ -8,8 +8,8 @@ const CloudDiet = () => {
 
   return (
     <>
-      <section className="relative w-full overflow-hidden bg-[#fafafa]  sm:py-10">
-        <div className="mx-auto w-full max-w-[1600px] px-6 sm:px-10 lg:px-16 xl:px-24 2xl:px-40">
+      <section className="relative w-full overflow-hidden bg-[#fafafa]  sm:pt-14">
+        <div className="mx-auto w-full px-[40px] md:px-[60px] xl:px-[160px]">
           <div className="grid grid-cols-1 xl:grid-cols-2 items-center gap-12">
             {/* LEFT CONTENT */}
             <div className="flex flex-col items-center xl:items-start text-center xl:text-left space-y-3 max-w-[650px]">
@@ -26,7 +26,7 @@ const CloudDiet = () => {
 
               {/* Heading */}
               <H2 className="leading-tight">
-                Start saving with CloudDIET today.
+                Start saving with CloudDIET
               </H2>
 
               {/* CTA */}

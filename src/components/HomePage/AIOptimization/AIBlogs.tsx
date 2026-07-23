@@ -118,7 +118,7 @@ const AIBlogs = () => {
             </P>
 
             {/* Divider */}
-            <div className="mt-8 sm:mt-10 lg:mt-12 xl:mt-12 h-[0.5px] w-full bg-[#009565]" />
+            <div className="mt-4 h-[0.5px] w-full bg-[#009565]" />
 
             {/* Mobile Header */}
             <div className="flex md:hidden justify-end gap-3 mt-6">
@@ -206,7 +206,7 @@ const AIBlogs = () => {
             </div>
 
             {/* Desktop Grid */}
-            <div className="hidden md:grid mt-8 lg:mt-12 grid-cols-3">
+            <div className="hidden md:grid mt-8 grid-cols-3">
               {blogs.map((blog, index) => (
                 <div
                   key={blog.id}
@@ -216,7 +216,7 @@ const AIBlogs = () => {
                       : ""
                   }`}
                 >
-                  <div className="relative overflow-hidden rounded-[8px] h-[150px]">
+                  <div className="relative overflow-hidden rounded-[8px] h-[120px]">
                     <img
                       src={blog.image}
                       alt={blog.title}
@@ -233,10 +233,10 @@ const AIBlogs = () => {
                     />
                   </div>
 
-                  <div className="mt-4 flex flex-col justify-between min-h-[185px]">
+                  <div className="mt-2 flex flex-col justify-between min-h-[165px]">
                     <H4>{blog.title}</H4>
 
-                    <P className="mt-3 text-[14px] leading-6 text-[#555] line-clamp-3">
+                    <P className=" text-[14px] leading-6 text-[#555] line-clamp-3">
                       {blog.description}
                     </P>
 

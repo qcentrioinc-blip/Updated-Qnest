@@ -418,7 +418,7 @@ export default function CloudDietHero() {
       {/* Hero content */}
       <div className="relative z-[30] px-14 pt-10 max-w-[900px] max-md:px-5 max-md:pt-5 max-md:max-w-full xl:px-[160px]">
         <H1 className="mt-[60px] lg:mt-[110px] xl:mt-[130px] uppercase text-[#00A86B]">
-          AI-Powered Azure<br/>Optimization Platform
+          AI-Powered Azure<br/>Optimization
         </H1>
 
         <P className="text-gray-700  my-4 max-w-xl lg:max-w-md">
