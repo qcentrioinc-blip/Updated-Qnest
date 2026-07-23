@@ -79,7 +79,7 @@ export default function ImageGrid() {
             return (
               <div
                 key={index}
-                className="bg-gray-50 rounded-3xl p-6 border border-gray-100 space-y-5"
+                className="bg-gray-50 rounded-sm p-6 border border-gray-100 space-y-5"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-[#009565] flex items-center justify-center text-white shadow-md">

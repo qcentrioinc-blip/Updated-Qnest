@@ -32,7 +32,7 @@ const Statistics = () => {
         <div
             ref={sectionRef}
             onMouseMove={handleMouseMove}
-            className="relative overflow-hidden px-[40px] md:px-[60px] xl:px-[160px]"
+            className="relative overflow-hidden pb-10 sm:pb-0 px-[40px] md:px-[60px] xl:px-[160px]"
            
         >
             

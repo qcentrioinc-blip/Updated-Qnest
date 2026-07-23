@@ -131,7 +131,7 @@ export default function Firm() {
         enabled={!isMobile}
         spotlightRadius={590}
       /> */}
-      <section className="w-full py-8 xl:py-16   md:px-[60px] xl:px-[160px]" >
+      <section className="w-full py-8 xl:py-16 px-[40px] md:px-[60px] xl:px-[160px]" >
         <div className=" ">
           {/* Heading */}
           <div className="text-center ">

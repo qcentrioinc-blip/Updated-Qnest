@@ -119,7 +119,7 @@ const UseCases = () => {
 
 
 
-      <div className="flex lg:hidden space-y-10 flex-col" style={{ contentVisibility: 'auto', containIntrinsicSize: '500px' }}>
+      <div className="flex lg:hidden space-y-4 flex-col" style={{ contentVisibility: 'auto', containIntrinsicSize: '500px' }}>
 
         {TABS.map(tab => (
           <div key={tab.id} className="flex flex-col">
@@ -137,7 +137,7 @@ const UseCases = () => {
             </div>
 
             {/* IMAGE */}
-            <div className="w-full mt-10 h-[200px] overflow-hidden">
+            <div className="w-full mt-2 xl:mt-10 h-[200px] overflow-hidden">
               <img
                 src={tab.image}
                 alt={tab.alt}

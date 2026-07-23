@@ -549,11 +549,7 @@ const AINavbar = () => {
 
           <MobileResourcesDropdown setMenuOpen={setMenuOpen} />
 
-          <div className="border-b border-gray-200 pb-3">
-            <Link to={`${base}/careers`} onClick={() => setMenuOpen(false)} className=" font-quadran font-regular block">
-              Careers
-            </Link>
-          </div>
+          
         </div>
 
         <div className="flex justify-between mt-10 gap-6 pt-4">
