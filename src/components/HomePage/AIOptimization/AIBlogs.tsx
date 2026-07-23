@@ -158,7 +158,7 @@ const AIBlogs = () => {
                   key={blog.id}
                   className="min-w-[250px] w-[250px] flex-shrink-0"
                 >
-                  <div className="relative overflow-hidden rounded-[4px] h-[190px]">
+                  <div className="relative overflow-hidden rounded-[4px] h-[200px]">
                     <img
                       src={blog.image}
                       alt={blog.title}
