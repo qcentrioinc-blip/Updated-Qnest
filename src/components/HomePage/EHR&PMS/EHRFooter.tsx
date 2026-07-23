@@ -111,16 +111,16 @@ const EHRFooter = () => {
   ];
  
   return (
-    <footer className="bg-[#00AA72] dark:bg-[#141414]">
+    <footer className="bg-[#00AA72] ">
       {/* Green Gradient Layers */}
       <GradientLayers />
  
       {/* Main Container */}
-      <div className="bg-[#00AA72] dark:bg-[#141414] flex flex-col pt-16 items-left max-w-8xl px-4 sm:px-6 md:px-8 lg:px-16">
+      <div className="bg-[#00AA72]  flex flex-col pt-16 items-left max-w-8xl px-4 sm:px-6 md:px-8 lg:px-16">
  
         {/* TOP CARD - Newsletter */}
         <div
-          className="bg-white dark:bg-[#141414] shadow-xl w-full"
+          className="bg-white  shadow-xl w-full"
           style={{
             borderRadius: '10px',
             marginBottom: '11px',
@@ -254,7 +254,7 @@ const EHRFooter = () => {
  
         {/* BOTTOM CARD - Links */}
         <div
-          className="bg-white dark:bg-[#141414] shadow-xl w-full relative"
+          className="bg-white  shadow-xl w-full relative"
           style={{
             borderRadius: '8px',
             opacity: 1
@@ -267,7 +267,7 @@ const EHRFooter = () => {
               {/* QUICK LINKS */}
               <div>
                 <h3
-                  className="mb-6 text-[#2a2a2a] dark:text-white"
+                  className="mb-6 text-[#2a2a2a] "
                   style={{
                     fontFamily: "'Bricolage Grotesque', sans-serif",
                     fontWeight: 400,
@@ -284,7 +284,7 @@ const EHRFooter = () => {
                     <li key={link.name}>
                       <a
                         href={link.path}
-                        className="hover:opacity-80 font-quicksand dark:text-white font-bold text-lg text-[#00AA72] transition-opacity inline-block"
+                        className="hover:opacity-80 font-quicksand  font-bold text-lg text-[#00AA72] transition-opacity inline-block"
                       >
                         {link.name}
                       </a>
@@ -296,7 +296,7 @@ const EHRFooter = () => {
               {/* BUILT FOR */}
               <div>
                 <h3
-                  className="mb-6 text-[#2a2a2a] dark:text-white"
+                  className="mb-6 text-[#2a2a2a] "
                   style={{
                     fontFamily: "'Bricolage Grotesque', sans-serif",
                     fontWeight: 400,
@@ -313,7 +313,7 @@ const EHRFooter = () => {
                     <li key={link.name}>
                       <a
                         href={link.path}
-                        className="hover:opacity-80 font-quicksand font-bold  dark:text-white text-lg text-[#00AA72] transition-opacity inline-block"
+                        className="hover:opacity-80 font-quicksand font-bold   text-lg text-[#00AA72] transition-opacity inline-block"
                       >
                         {link.name}
                       </a>

@@ -1,4 +1,4 @@
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 
 const bulletItems = [
     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu Excepteur sint occaecat cupidatat",
@@ -75,7 +75,7 @@ const CosLanding = () => {
                                 >
                                     Duis aute irure dolor in reprehenderit in voluptate velit esse
                                 </p>
-                                <ContactUs>CONTACT US</ContactUs>
+                                {/* <ContactUs>CONTACT US</ContactUs> */}
                             </div>
 
                             {/* Bullets */}
@@ -175,7 +175,7 @@ const CosLanding = () => {
                             >
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                             </p>
-                            <ContactUs>CONTACT US</ContactUs>
+                            {/* <ContactUs>CONTACT US</ContactUs> */}
                         </div>
 
                         {/* Bullets */}

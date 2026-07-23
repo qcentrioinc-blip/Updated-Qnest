@@ -13,7 +13,7 @@ const Clouddietpermissions: React.FC = () => {
         usage metrics, and billing data.
       </P>
 
-      <h2 className="font-quadran dark:text-white text-xl md:text-2xl lg:text-3xl my-4">
+      <h2 className="font-quadran  text-xl md:text-2xl lg:text-3xl my-4">
         Note:
       </h2>
       <P className="font-quicksand text-lg leading-tight tracking-wide">
@@ -23,7 +23,7 @@ const Clouddietpermissions: React.FC = () => {
       </P>
 
       <H3 className="my-4">Steps</H3>
-      <ol className="dark:text-white list-decimal list-inside space-y-6">
+      <ol className=" list-decimal list-inside space-y-6">
         <li className="font-regular font-quadran leading-[120%] text-[10px] xl:text-[12px]">
           Create an Azure Service Principal – This allows the CloudDIET profiler
           to authenticate to Azure.
@@ -59,7 +59,7 @@ const Clouddietpermissions: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-            <tr className="border-b dark:text-white">
+            <tr className="border-b ">
               <td className="px-4 py-3 border-r font-regular font-quadran leading-[120%] text-[10px] xl:text-[12px]">
                 Billing Account Reader<br />
                 Billing Scope
@@ -80,7 +80,7 @@ const Clouddietpermissions: React.FC = () => {
               </td>
             </tr>
 
-            <tr className="border-b dark:text-white">
+            <tr className="border-b ">
               <td className="px-4 py-3 border-r font-regular font-quadran leading-[120%] text-[10px] xl:text-[12px]">
                 Log Analytics Reader<br />
                 All Subscriptions
@@ -101,7 +101,7 @@ const Clouddietpermissions: React.FC = () => {
               </td>
             </tr>
 
-            <tr className="border-b dark:text-white">
+            <tr className="border-b ">
               <td className="px-4 py-3 border-r font-regular font-quadran leading-[120%] text-[10px] xl:text-[12px]">
                 Reservations Reader<br />
                 All Subscriptions
@@ -468,7 +468,7 @@ const Clouddietpermissions: React.FC = () => {
         </table>
       </div>
 
-      <ol className="list-decimal dark:text-white list-inside space-y-6">
+      <ol className="list-decimal  list-inside space-y-6">
         <li className="font-regular font-quadran leading-[120%] text-[10px] xl:text-[12px]">
           In the Azure portal, search for Cost Management + Billing.
         </li>

@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import ContactDrawer from "../Navbar/ContactDrawer";
 
 const ContactSection: React.FC = () => {
@@ -72,7 +72,7 @@ const ContactSection: React.FC = () => {
             dolore eu fugiat nulla pariatur.
           </motion.p>
 
-          <ContactUs
+          {/* <ContactUs
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
@@ -81,7 +81,7 @@ const ContactSection: React.FC = () => {
             className="w-fit transition-transform hover:scale-105 active:scale-95"
           >
             CONTACT US
-          </ContactUs>
+          </ContactUs> */}
         </div>
       </div>
 

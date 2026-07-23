@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { H1, H2, P } from '../../../styles/Typography';
-import { ContactUs } from '../../../styles/Button';
+    // import { ContactUs } from '../../../styles/Button';
 import { Link } from 'react-router-dom';
 import { TrendingUp } from "lucide-react";
 
@@ -258,7 +258,7 @@ export default function HeroSection() {
             to="/marketplace"
             
           >
-            <ContactUs>Explore Diligent </ContactUs>
+            {/* <ContactUs>Explore Diligent </ContactUs> */}
           </Link>
 
           {/* ================= STATS SECTION ================= */}

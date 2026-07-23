@@ -131,11 +131,11 @@ export default function Firm() {
         enabled={!isMobile}
         spotlightRadius={590}
       /> */}
-      <section className="w-full py-8 xl:py-16  dark:bg-black px-[40px]   md:px-[60px] xl:px-[160px]" >
+      <section className="w-full py-8 xl:py-16   md:px-[60px] xl:px-[160px]" >
         <div className=" ">
           {/* Heading */}
           <div className="text-center ">
-            <H3 className="max-w-sm mx-auto dark:text-white text-[#009565] overflow-hidden">
+            <H3 className="max-w-sm mx-auto text-[#009565] overflow-hidden">
               <motion.span
                 className="inline-block"
                 variants={floatContainerVariants}
@@ -161,13 +161,13 @@ export default function Firm() {
           </div>
 
           {/* Outer White Container */}
-          <div className="bg-white dark:bg-slate-700 rounded-3xl md:mt-8 ">
+          <div className="bg-white  rounded-3xl md:mt-8 ">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
               variants={containerVariants}
-              className="grid bg-[#F7FFEC] dark:bg-slate-400 rounded-4xl  grid-cols-1 lg:grid-cols-2 lg:gap-6"
+              className="grid bg-[#F7FFEC]  rounded-4xl  grid-cols-1 lg:grid-cols-2 lg:gap-6"
             >
 
               {/* Other Firms */}
@@ -198,8 +198,8 @@ export default function Firm() {
               <motion.div
                 variants={cardVariants}
                 className="
-  bg-white  rounded-tl-[3rem]  rounded-br-[3rem]  dark:bg-slate-700 p-6 sm:p-8 text-left
-  border-[0.5rem]  dark:border-gray-800 border-[#009565]
+  bg-white  rounded-tl-[3rem]  rounded-br-[3rem]  p-6 sm:p-8 text-left
+  border-[0.5rem]  border-[#009565]
   shadow-xl
   md:-ml-4
 "

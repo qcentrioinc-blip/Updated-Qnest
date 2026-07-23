@@ -34,7 +34,7 @@ const Counter = () => {
   ref={sectionRef}
   onMouseDown={(e) => e.preventDefault()}
   onMouseMove={handleMouseMove}
-  className="relative overflow-hidden py-6 md:py-10 select-none dark:bg-gradient-to-r- dark:from-[#000000] dark:to-[#141414] bg-gradient-to-r from-[#00AA724D] to-[#E8F2FF]"
+  className="relative overflow-hidden py-6 md:py-10 select-none bg-gradient-to-r from-[#00AA724D] to-[#E8F2FF]"
 >
       {/* Glow effect following mouse */}
       <motion.div
@@ -52,7 +52,7 @@ const Counter = () => {
         <H2 className="  font-bold mb-12  lg:mx-6 md:mt-10 md:mb-16">
           <span className="text-[#00AA72]">Trusted by financial institutions  </span>
           <br className="xl:block hidden"/>
-          <span className="text-[#333333] dark:text-white">across the globe</span>
+          <span className="text-[#333333] ">across the globe</span>
         </H2>
 
         {/* Counter Grid - Left Aligned */}
@@ -78,7 +78,7 @@ const Counter = () => {
                 alt="Trend icon"
                 className="h-12 md:h-14 lg:h-18"
               />
-              <h2 className="   text-[#141414]  dark:text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-quadran  ">
+              <h2 className="   text-[#141414]  text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-quadran  ">
                 {inView && (
                   <CountUp
                     start={0}

@@ -156,143 +156,143 @@ const useClickSpark = (options: {
 /* =========================================================
    1) CONTACT US BUTTON
    ========================================================= */
-export const ContactUs = ({ children, className = "", onClick }: ButtonProps) => {
-  const location = useLocation();
-  const pathParts = location.pathname.split("/");
-  const industrySlug = pathParts.includes("industries")
-    ? pathParts[pathParts.indexOf("industries") + 1]
-    : null;
-  const contactUrl = industrySlug
-    ? `/industries/${industrySlug}/contactform`
-    : "/contact";
+// export const ContactUs = ({ children, className = "", onClick }: ButtonProps) => {
+//   const location = useLocation();
+//   const pathParts = location.pathname.split("/");
+//   const industrySlug = pathParts.includes("industries")
+//     ? pathParts[pathParts.indexOf("industries") + 1]
+//     : null;
+//   const contactUrl = industrySlug
+//     ? `/industries/${industrySlug}/contactform`
+//     : "/contact";
 
-  const { canvasRef, triggerSpark } = useClickSpark({});
+//   const { canvasRef, triggerSpark } = useClickSpark({});
 
-  const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    triggerSpark(e);
-  };
+//   const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+//     triggerSpark(e);
+//   };
 
-  const handleLinkClick = (e: React.MouseEvent) => {
-    if (onClick) {
-      onClick(e);
-    }
-  };
+//   const handleLinkClick = (e: React.MouseEvent) => {
+//     if (onClick) {
+//       onClick(e);
+//     }
+//   };
 
-  return (
-    <div className="relative inline-block w-fit" onClick={handleClick}>
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 pointer-events-none"
-      ></canvas>
+//   return (
+//     <div className="relative inline-block w-fit" onClick={handleClick}>
+//       <canvas
+//         ref={canvasRef}
+//         className="absolute inset-0 pointer-events-none"
+//       ></canvas>
 
-      <a href={contactUrl} onClick={handleLinkClick}>
-        <button
-          className={`
-            group
-            dark:border-white 
-            flex items-center justify-center
-            w-auto h-[44px] sm:h-[48px]
-            px-[20px] sm:px-[24px] py-[10px] sm:py-[12px]
-            rounded-[8px]
-            font-quicksand font-bold text-[14px] sm:text-[16px]
-            bg-[#141414] text-white
-            transition-all duration-300 ease-in-out
-            border border-transparent
-            hover:bg-white hover:text-[#141414]
-            hover:border-[#010101]
-            hover:border-b-[4px]
-            hover:-translate-y-[2px]
-            cursor-pointer
-            shadow-[0_6px_2px_-4px_rgba(14,14,44,0.1)]
-            ${className}
-          `}
-        >
-          <span className="flex items-center gap-[8px]">
-            {children}
-            <span className="relative flex items-center justify-center w-[20px] sm:w-[23px] h-[20px] sm:h-[23px]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute inset-0 opacity-100 transition-opacity duration-300 group-hover:opacity-0">
-                <path d="M7 7h10v10" />
-                <path d="M7 17L17 7" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </span>
-          </span>
-        </button>
-      </a>
-    </div>
-  );
-};
+//       <a href={contactUrl} onClick={handleLinkClick}>
+//         <button
+//           className={`
+//             group
+           
+//             flex items-center justify-center
+//             w-auto h-[44px] sm:h-[48px]
+//             px-[20px] sm:px-[24px] py-[10px] sm:py-[12px]
+//             rounded-[8px]
+//             font-quicksand font-bold text-[14px] sm:text-[16px]
+//             bg-[#141414] text-white
+//             transition-all duration-300 ease-in-out
+//             border border-transparent
+//             hover:bg-white hover:text-[#141414]
+//             hover:border-[#010101]
+//             hover:border-b-[4px]
+//             hover:-translate-y-[2px]
+//             cursor-pointer
+//             shadow-[0_6px_2px_-4px_rgba(14,14,44,0.1)]
+//             ${className}
+//           `}
+//         >
+//           <span className="flex items-center gap-[8px]">
+//             {children}
+//             <span className="relative flex items-center justify-center w-[20px] sm:w-[23px] h-[20px] sm:h-[23px]">
+//               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute inset-0 opacity-100 transition-opacity duration-300 group-hover:opacity-0">
+//                 <path d="M7 7h10v10" />
+//                 <path d="M7 17L17 7" />
+//               </svg>
+//               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+//                 <path d="M5 12h14" />
+//                 <path d="m12 5 7 7-7 7" />
+//               </svg>
+//             </span>
+//           </span>
+//         </button>
+//       </a>
+//     </div>
+//   );
+// };
 
-export const ContactUsHigh = ({ children, className = "", onClick }: ButtonProps) => {
-  const location = useLocation();
-  const pathParts = location.pathname.split("/");
-  const industrySlug = pathParts.includes("industries")
-    ? pathParts[pathParts.indexOf("industries") + 1]
-    : null;
-  const contactUrl = industrySlug
-    ? `/industries/${industrySlug}/contactform`
-    : "/contact";
+// export const ContactUsHigh = ({ children, className = "", onClick }: ButtonProps) => {
+//   const location = useLocation();
+//   const pathParts = location.pathname.split("/");
+//   const industrySlug = pathParts.includes("industries")
+//     ? pathParts[pathParts.indexOf("industries") + 1]
+//     : null;
+//   const contactUrl = industrySlug
+//     ? `/industries/${industrySlug}/contactform`
+//     : "/contact";
 
-  const { canvasRef, triggerSpark } = useClickSpark({});
+//   const { canvasRef, triggerSpark } = useClickSpark({});
 
-  const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    triggerSpark(e);
-  };
+//   const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+//     triggerSpark(e);
+//   };
 
-  const handleLinkClick = (e: React.MouseEvent) => {
-    if (onClick) {
-      onClick(e);
-    }
-  };
+//   const handleLinkClick = (e: React.MouseEvent) => {
+//     if (onClick) {
+//       onClick(e);
+//     }
+//   };
 
-  return (
-    <div className="relative inline-block w-fit" onClick={handleClick}>
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 pointer-events-none"
-      ></canvas>
+//   return (
+//     <div className="relative inline-block w-fit" onClick={handleClick}>
+//       <canvas
+//         ref={canvasRef}
+//         className="absolute inset-0 pointer-events-none"
+//       ></canvas>
 
-      <a href={contactUrl} onClick={handleLinkClick}>
-        <button
-          className={`
-            group
-            flex items-center justify-center
-            w-auto h-[44px] sm:h-[48px]
-            px-[20px] sm:px-[24px] py-[10px] sm:py-[12px]
-            rounded-[8px]
-            font-quicksand font-bold text-[14px] sm:text-[16px]
-            bg-white text-[#141414]
-            transition-all duration-300 ease-in-out
-            border border-transparent
-            hover:bg-[#141414] hover:text-white
+//       <a href={contactUrl} onClick={handleLinkClick}>
+//         <button
+//           className={`
+//             group
+//             flex items-center justify-center
+//             w-auto h-[44px] sm:h-[48px]
+//             px-[20px] sm:px-[24px] py-[10px] sm:py-[12px]
+//             rounded-[8px]
+//             font-quicksand font-bold text-[14px] sm:text-[16px]
+//             bg-white text-[#141414]
+//             transition-all duration-300 ease-in-out
+//             border border-transparent
+//             hover:bg-[#141414] hover:text-white
              
-            hover:border-b-[4px] hover:border-white
-            hover:-translate-y-[2px]
-            shadow-[0_6px_2px_-4px_rgba(14,14,44,0.1)]
-            ${className}
-          `}
-        >
-          <span className="flex items-center gap-[8px]">
-            {children}
-            <span className="relative flex items-center justify-center w-[20px] sm:w-[23px] h-[20px] sm:h-[23px]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute inset-0 opacity-100 transition-opacity duration-300 group-hover:opacity-0">
-                <path d="M7 7h10v10" />
-                <path d="M7 17L17 7" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </span>
-          </span>
-        </button>
-      </a>
-    </div>
-  );
-};
+//             hover:border-b-[4px] hover:border-white
+//             hover:-translate-y-[2px]
+//             shadow-[0_6px_2px_-4px_rgba(14,14,44,0.1)]
+//             ${className}
+//           `}
+//         >
+//           <span className="flex items-center gap-[8px]">
+//             {children}
+//             <span className="relative flex items-center justify-center w-[20px] sm:w-[23px] h-[20px] sm:h-[23px]">
+//               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute inset-0 opacity-100 transition-opacity duration-300 group-hover:opacity-0">
+//                 <path d="M7 7h10v10" />
+//                 <path d="M7 17L17 7" />
+//               </svg>
+//               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+//                 <path d="M5 12h14" />
+//                 <path d="m12 5 7 7-7 7" />
+//               </svg>
+//             </span>
+//           </span>
+//         </button>
+//       </a>
+//     </div>
+//   );
+// };
 
 export const ContactUsHighYellow = ({ children, className = "", onClick }: ButtonProps) => {
   const location = useLocation();
@@ -354,55 +354,6 @@ export const ContactUsHighYellow = ({ children, className = "", onClick }: Butto
           </span>
         </button>
       </a>
-    </div>
-  );
-};
-
-/* =========================================================
-   2) CONTACT US DARK
-   ========================================================= */
-export const ContactUsDark = ({ children, className = "", onClick }: ButtonProps) => {
-  const { canvasRef, triggerSpark } = useClickSpark({});
-
-  const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    triggerSpark(e);
-    if (onClick) onClick(e);
-  };
-
-  return (
-    <div className="relative inline-block w-fit" onClick={handleClick}>
-      <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none"></canvas>
-
-      <div
-        className={`
-          group
-          flex items-center justify-center
-          w-auto h-[48px]
-          px-[24px] py-[12px]
-          rounded-[8px]
-          font-quicksand font-bold text-[16px]
-          bg-white/85 text-black
-          border-2 border-[#141414]
-          shadow-[0_6px_2px_-4px_rgba(14,14,44,0.1)]
-          transition-all duration-300
-          hover:bg-white hover:text-black hover:cursor-pointer
-          ${className}
-        `}
-      >
-        <span className="flex items-center gap-2">
-          {children}
-          <span className="relative flex items-center w-[20px] h-[20px]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute inset-0 opacity-100 transition-opacity duration-300 group-hover:opacity-0">
-              <path d="M7 7h10v10" />
-              <path d="M7 17L17 7" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
-          </span>
-        </span>
-      </div>
     </div>
   );
 };

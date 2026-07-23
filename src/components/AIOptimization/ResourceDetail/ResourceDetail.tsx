@@ -19,7 +19,7 @@ const ResourceDetail = () => {
     return (
         <>
         
-            <section className="w-full dark:black bg-white">
+            <section className="w-full  bg-white">
                 
                 {/* Top section with background pattern */}
                 <div className="relative">

@@ -16,21 +16,21 @@ const TABS: Tab[] = [
     id: 1,
     shortLabel: 'Customer Example 1',
     fullLabel: 'Customer Example 1 - GLOBAL REAL ESTATE FIRM',
-    image: '/RealEstate-transformed.webp',
+    image: '/CloudDiet/HomePage/UseCases1.webp',
     alt: 'Global Real Estate Firm cost optimization visualization',
   },
   {
     id: 2,
     shortLabel: 'Customer Example 2',
     fullLabel: 'Customer Example 2 - AUSTRALIAN MINING COMPANY',
-    image: '/Mining-transformed.webp',
+    image: '/CloudDiet/HomePage/UseCases2.webp',
     alt: 'Australian Mining Company optimization metrics',
   },
   {
     id: 3,
     shortLabel: 'Customer Example 3',
     fullLabel: 'Customer Example 3 - DIGITAL MARKETING FIRM',
-    image: '/DigitalMarketing-transformed.webp',
+    image:'/CloudDiet/HomePage/UseCases3.webp',
     alt: 'Digital Marketing Firm cloud spend analysis',
   },
 ];
@@ -45,11 +45,11 @@ const UseCases = () => {
 
 
   return (
-    <section className="w-full dark:bg-black py-10 px-[40px] md:px-[60px] xl:px-[160px]">
+    <section className="w-full  py-10 px-[40px] md:px-[60px] xl:px-[160px]">
       <div className=" " style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}>
 
         {/* SECTION HEADING */}
-        <H3 className="text-[#009565] mb-10">
+        <H3 className="text-[#009565] mb-4">
           Unoptimized to Optimized Cloud Spend
         </H3>
 
@@ -65,7 +65,7 @@ const UseCases = () => {
                   onClick={() => setActiveTab(tab.id)}
                   aria-label={`View ${tab.fullLabel}`}
                   className={`
-                    relative h-14 rounded-xl border font-quicksand text-sm sm:text-base
+                    relative h-14 rounded-xl border font-quadran text-sm sm:text-base
                     transition-[width,background-color] duration-500 ease-in-out
                     flex items-center overflow-hidden
                     ${isActive
@@ -94,7 +94,7 @@ const UseCases = () => {
 
         {/* IMAGE CONTAINER */}
         <div className="  rounded-xl  hidden lg:block overflow-hidden  ">
-          <div className="relative w-full h-[800px]  overflow-hidden">
+          <div className="relative w-full h-[580px]  overflow-hidden">
 
             {/* Cross-fade images (no white flash) */}
             {TABS.map((tab, index) => (
@@ -130,14 +130,14 @@ const UseCases = () => {
                   h-14 flex items-center px-6
                   bg-[#009565] text-white
                   border border-[#009565]
-                  font-quicksand text-sm
+                  font-quadran text-sm
                 "
             >
               {tab.fullLabel}
             </div>
 
             {/* IMAGE */}
-            <div className="w-full mt-10 h-[300px] overflow-hidden">
+            <div className="w-full mt-10 h-[200px] overflow-hidden">
               <img
                 src={tab.image}
                 alt={tab.alt}

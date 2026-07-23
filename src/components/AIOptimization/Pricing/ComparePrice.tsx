@@ -78,12 +78,12 @@ const ComparePrice = () => {
   );
 
   return (
-    <section className="dark:bg-black">
+    <section className="">
       <div className="min-h-screen px-[40px] md:px-[60px] xl:px-[160px] flex flex-col pt-6">
         {/* Header Section */}
         <div className="w-full flex flex-col gap-4">
           <div className="text-center">
-            <H2 className="text-[#141414] dark:text-white mb-3 md:mb-4">
+            <H2 className="text-[#141414]  mb-3 md:mb-4">
               Find Your Perfect Plan
             </H2>
             <P className="text-[#141414] text-center max-w-full md:max-w-[500px] mx-auto px-2">
@@ -92,7 +92,7 @@ const ComparePrice = () => {
           </div>
 
           {/* Pricing Table */}
-          <div className="w-full dark:bg-slate-800 rounded-3xl md:rounded-[64px] border-2 border-[#E7EBFF] overflow-hidden relative">
+          <div className="w-full  rounded-3xl md:rounded-[64px] border-2 border-[#E7EBFF] overflow-hidden relative">
 
             {/* Desktop View - Grid Layout */}
             <div className="hidden lg:grid grid-cols-[280px_1fr_1fr] xl:grid-cols-[300px_1fr_1fr] 2xl:grid-cols-[320px_1fr_1fr]">
@@ -100,7 +100,7 @@ const ComparePrice = () => {
               {/* Left Column - Compare Plans */}
               <div className="border-r border-[#E6E9F5] p-6 xl:p-8 flex flex-col">
                 <div className="pb-4 border-b border-gray-200">
-                  <H3 className="text-[#009565] dark:text-white leading-tight mb-3">
+                  <H3 className="text-[#009565]  leading-tight mb-3">
                     Compare plans
                   </H3>
                   <P className="text-[#141414] leading-relaxed">
@@ -114,7 +114,7 @@ const ComparePrice = () => {
                       key={index} 
                       className="flex items-center min-h-[48px] py-2 border-b border-gray-100"
                     >
-                      <span className="font-quadran font-normal text-sm md:text-base dark:text-white text-[#141414] leading-tight">
+                      <span className="font-quadran font-normal text-sm md:text-base  text-[#141414] leading-tight">
                         {feature.name}
                       </span>
                     </div>
@@ -123,10 +123,10 @@ const ComparePrice = () => {
               </div>
 
               {/* Middle Column - Starter */}
-              <div className="p-6 xl:p-8 bg-white dark:bg-slate-950 shadow-[0px_26px_40px_0px_#BCCAFF21] flex flex-col relative z-10">
+              <div className="p-6 xl:p-8 bg-white  shadow-[0px_26px_40px_0px_#BCCAFF21] flex flex-col relative z-10">
                 <div className="pb-4 border-b border-gray-200">
-                  <H3 className="text-[#009565] dark:text-white leading-tight mb-3">Starter</H3>
-                  <P className="text-[#141414] dark:text-gray-300 leading-relaxed">
+                  <H3 className="text-[#009565]  leading-tight mb-3">Starter</H3>
+                  <P className="text-[#141414]  leading-relaxed">
                     Ideal for small to mid-sized teams beginning their Azure cost optimization journey.
                   </P>
                 </div>
@@ -150,7 +150,7 @@ const ComparePrice = () => {
               </div>
 
               {/* Right Column - Enterprise */}
-              <div className="p-6 xl:p-8 rounded-[46px] rounded-br-[52px] flex flex-col relative overflow-hidden bg-[#0095655E] dark:bg-transparent">
+              <div className="p-6 xl:p-8 rounded-[46px] rounded-br-[52px] flex flex-col relative overflow-hidden bg-[#0095655E] ">
                 {/* Decorative elements */}
                 <div
                   className="absolute pointer-events-none z-0"
@@ -245,7 +245,7 @@ const ComparePrice = () => {
             <div className="lg:hidden flex flex-col">
               {/* Compare Plans Header for Mobile */}
               <div className="p-6 md:p-10 border-b border-gray-200">
-                <H3 className="text-[#009565] dark:text-white leading-tight mb-3">
+                <H3 className="text-[#009565] leading-tight mb-3">
                   Compare plans
                 </H3>
                 <P className="font-quadran font-normal text-sm md:text-base text-[#141414] leading-relaxed">
@@ -256,7 +256,7 @@ const ComparePrice = () => {
               {/* Starter Plan Card - Mobile */}
               <div className="p-6 md:p-10 border-b border-[#E6E9F5]">
                 <div className="mb-6">
-                  <H3 className="text-[#009565] dark:text-white leading-tight mb-3">Starter</H3>
+                  <H3 className="text-[#009565]  leading-tight mb-3">Starter</H3>
                   <P className="text-[#141414] leading-relaxed">
                     Ideal for small to mid-sized teams beginning their Azure cost optimization journey.
                   </P>
@@ -268,7 +268,7 @@ const ComparePrice = () => {
                       <div className="flex-shrink-0">
                         {feature.includedStarter ? renderCheckIcon() : renderCrossIcon()}
                       </div>
-                      <span className="text-[#141414] dark:text-white leading-relaxed">
+                      <span className="text-[#141414] leading-relaxed">
                         {feature.name}
                       </span>
                     </div>

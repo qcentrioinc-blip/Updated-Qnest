@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import { H1, H4, P } from "../../../styles/Typography";
  
 const bulletItems = [
@@ -76,7 +76,7 @@ const FirstPage = () => {
                                 }
                             }}
                         >
-                                <ContactUs>Explore LOS</ContactUs>
+                                {/* <ContactUs>Explore LOS</ContactUs> */}
                                 </Link>
                             </div>
  
@@ -169,7 +169,7 @@ const FirstPage = () => {
                                 }
                             }}
                         >
-                                <ContactUs>Explore LOS</ContactUs>
+                                {/* <ContactUs>Explore LOS</ContactUs> */}
                                 </Link>
                         </div>
  

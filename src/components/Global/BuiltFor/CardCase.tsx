@@ -1,6 +1,6 @@
 import { P } from "../../../styles/Typography";
 import { useParams } from "react-router-dom";
-import { useTheme } from "../ThemeContext";
+// import { useTheme } from "../ThemeContext";
 
 const CARD_CONFIG: Record<
   string,
@@ -8,9 +8,7 @@ const CARD_CONFIG: Record<
     string,
     {
       bg: string;
-       darkBg?: string;   
       headingColor?: string;
-         darkHeadingColor?: string;
       heading: string;
       cards: {
         id: number;
@@ -24,8 +22,6 @@ const CARD_CONFIG: Record<
   "cloud-finops-ai": {
     enterprises: {
       bg: "#FAFAFA",
-      darkBg: "#000000",
-      darkHeadingColor: "#60a5fa",
       headingColor: "#00AA72",
       heading: " Azure Spend Issues",
       cards: [
@@ -37,8 +33,6 @@ const CARD_CONFIG: Record<
 
     "saas-application-providers": {
       bg: "#FAFAFA",
-       darkBg: "#000000",
-      darkHeadingColor: "#60a5fa",
       headingColor: "#00AA72",
       heading: "SaaS Cost Problems",
       cards: [
@@ -51,8 +45,6 @@ const CARD_CONFIG: Record<
     "regulated-large-enterprise": {
       bg: "#FAFAFA",
       headingColor: "#00AA72",
-       darkBg: "#000000",
-      darkHeadingColor: "#60a5fa",
       heading: "Industry Struggles Today",
       cards: [
         { id: 1, title: " Cost Visibility", desc: "Fragmented views hide waste across regions, services, and business units. ", image: "/BuiltFor/OpenEye.svg" },
@@ -101,8 +93,6 @@ const CARD_CONFIG: Record<
   "ehr-and-pms": {
     "long-term-care": {
       bg: "#ffffff",
-      darkBg: "#141414",
-      darkHeadingColor: "#ffffff",
       headingColor: "#00AA72",
       heading: "Critical Pain Points",
       cards: [
@@ -113,8 +103,6 @@ const CARD_CONFIG: Record<
     },
     "home-healthcare": {
        bg: "#ffffff",
-      darkBg: "#042f2e",
-      darkHeadingColor: "#ffffff",
       headingColor: "#00AA72",
       heading: "Critical Operational Hurdles",
       cards: [
@@ -125,8 +113,6 @@ const CARD_CONFIG: Record<
     },
     "clinics-and-hospitals": {
       bg: "#ffffff",
-      darkBg: "#042f2e",
-      darkHeadingColor: "#ffffff",
       headingColor: "#00AA72",
       heading: "Critical Operational Hurdles",
       cards: [
@@ -164,13 +150,12 @@ const CARD_CONFIG: Record<
 
 export default function Cardcase() {
   
-  const { theme } = useTheme();
-  const isDark = theme === "dark";
+  // const { theme } = useTheme();
   const { industry, builtForType } = useParams<{
     industry: string;
     builtForType: string;
   }>();
-  const isEHR = industry === "ehr-and-pms";
+  // const isEHR = industry === "ehr-and-pms";
 
   const defaultBuiltForType = industry === "ehr-and-pms" ? "long-term-care" : industry === "banking-and-finance" ? "banks" : industry === "cloud-finops-ai" ? "enterprises" : "";
 
@@ -183,7 +168,6 @@ export default function Cardcase() {
   return (
     <section
       className="relative w-full py-12 overflow-hidden"
-         style={{ backgroundColor: isDark ? (config.darkBg ?? "#0f172a") : config.bg }}
     >
       {/* RIGHT-SIDE DIAGONAL IMAGE */}
       <div className=" hidden lg:block absolute top-[-5%] -right-10 h-full w-[17%] pointer-events-none">
@@ -199,7 +183,7 @@ export default function Cardcase() {
 
       {/* CONTENT WRAPPER */}
       <div className="relative max-w-7xl mx-10 md:px-3 lg:px-5 xl:px-8">
-        <h2 className={`mb-10 text-[24px] md:text-[32px] lg:text-[64px] ${industry === "ehr-and-pms" ? "font-quadran  EHR" : "font-quadran  "}`}  style={{ color: isDark ? (config.darkHeadingColor ?? "#ffffff") : (config.headingColor || "#00AA72") }}>{config.heading}</h2>
+        <h2 className={`mb-10 text-[24px] md:text-[32px] lg:text-[64px] ${industry === "ehr-and-pms" ? "font-quadran  EHR" : "font-quadran  "}`} >{config.heading}</h2>
 
         {/* CARDS GRID */}
         <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-stretch w-full justify-start">
@@ -210,9 +194,7 @@ export default function Cardcase() {
                 borderRadius: "8px",
                 padding: "30px 20px"
               }}
-             className={`flex-1 min-h-[330px] bg-white ${
-  isEHR ? "dark:bg-teal-900" : "dark:bg-black"
-} shadow-sm border border-gray-200 flex flex-col transition-all duration-300 hover:bg-white dark:hover:bg-transparent hover:shadow-lg w-full`}
+             className={`flex-1 min-h-[330px] bg-white  shadow-sm border border-gray-200 flex flex-col transition-all duration-300 hover:bg-white  hover:shadow-lg w-full`}
             >
               {/* Placeholder Circle */}
               <div className="w-20 h-20">
@@ -220,7 +202,7 @@ export default function Cardcase() {
               </div>
 
               {/* Title */}
-              <h4 className={`mt-6  text-[16px] md:text-[20px] lg:text-[24px] text-gray-900 dark:text-white  ${industry === "ehr-and-pms" ? "font-quadran  EHR" : "font-quadran  "}`}>{card.title}</h4>
+              <h4 className={`mt-6  text-[16px] md:text-[20px] lg:text-[24px] text-gray-900  ${industry === "ehr-and-pms" ? "font-quadran  EHR" : "font-quadran  "}`}>{card.title}</h4>
 
               {/* Description */}
               <P className="leading-relaxed mt-6">{card.desc}</P>

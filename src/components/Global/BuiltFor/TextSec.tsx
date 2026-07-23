@@ -83,7 +83,6 @@ export default function TextSec() {
     industry: string;
     builtForType: string;
   }>();
-  const isEHR = industry === "ehr-and-pms";
 
   const defaultBuiltForType = industry === "ehr-and-pms" ? "long-term-care" : industry === "banking-and-finance" ? "banks" : industry === "cloud-finops-ai" ? "enterprises" : "";
 
@@ -94,9 +93,7 @@ export default function TextSec() {
 
   return (
  <section
-  className={`w-full py-6 bg-white ${
-    isEHR ? "dark:bg-black" : "dark:bg-black"
-  }`}
+  className={`w-full py-6 bg-white `}
 >
       <div className="max-w-full px-[40px] md:px-[60px] xl:px-[160px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
@@ -107,17 +104,13 @@ export default function TextSec() {
   className={`mb-3 text-[14px] md:text-[16px] lg:text-[20px]
     ${industry === "ehr-and-pms" ? "font-quadran  EHR" : "font-quadran  "}
     font-Regular leading-[120%]
-    ${
-      isEHR
-        ? "dark:text-[#FFCA28]"
-        : "dark:text-[#00AA72]"
-    }
+    
   `}
 >
   {content.h4}
 </h5>
 
-            <h3 className={`leading-snug dark:text-white text-[20px] md:text-[24px] lg:text-[32px]
+            <h3 className={`leading-snug text-[20px] md:text-[24px] lg:text-[32px]
         ${industry === "ehr-and-pms" ? "font-quadran  EHR" : "font-quadran  "}
         font-semibold
         

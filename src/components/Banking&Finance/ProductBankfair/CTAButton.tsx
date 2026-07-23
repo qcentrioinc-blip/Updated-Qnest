@@ -15,9 +15,9 @@ const CTAButton: React.FC<CTAButtonProps> = () => {
         }
       }}
     >
-      <ContactUs className="hidden xl:block gap-2 whitespace-nowrap shrink-0">
+      {/* <ContactUs className="hidden xl:block gap-2 whitespace-nowrap shrink-0">
         Learn More
-      </ContactUs>
+      </ContactUs> */}
     </Link>
   );
 };
@@ -93,7 +93,7 @@ export default function Section() {
 // AccordionItem.tsx
 import { useState } from "react";
 import {  H2, H4, P } from "../../../styles/Typography";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import { Link } from "react-router-dom";
 
 interface Props {

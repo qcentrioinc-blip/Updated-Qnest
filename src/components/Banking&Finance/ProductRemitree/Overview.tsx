@@ -1,4 +1,4 @@
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import { H1, P } from "../../../styles/Typography";
 
 const column1Images = [
@@ -69,12 +69,12 @@ const Overview = () => {
                             justify-center lg:justify-start
                             mb-8 lg:mb-12 xl:mb-16
                         ">
-                            <ContactUs
+                            {/* <ContactUs
                                 onClick={(e) => {
                                     e.preventDefault();
                                     document.getElementById("contact-us")?.scrollIntoView({ behavior: "smooth" });
                                 }}
-                            >Explore Remitree</ContactUs>
+                            >Explore Remitree</ContactUs> */}
                             {/* <button className="
                                 bg-transparent text-[#00AA72]
                                 h-[44px] xl:h-[48px]

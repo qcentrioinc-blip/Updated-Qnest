@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { H1, P } from '../../../styles/Typography';
 import Image1 from '/ClinicApp/Phone.png';
-import { ContactUs } from '../../../styles/Button';
+// import { ContactUs } from '../../../styles/Button';
 import ContactDrawer from '../Navbar/ContactDrawer';
 
 const HeroSection = () => {
@@ -143,12 +143,12 @@ const HeroSection = () => {
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Duis aute irure dolor in
               </P>
 
-              <ContactUs
+              {/* <ContactUs
                 onClick={(e) => {
                   e.preventDefault(); 
                   setDrawerOpen(true);
                 }}
-              >GET PRODUCT DEMO</ContactUs>
+              >GET PRODUCT DEMO</ContactUs> */}
             </div>
 
           </div>

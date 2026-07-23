@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { P, H4, H2 } from "../../../styles/Typography";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import { Link } from "react-router-dom";
 
 const accordionData = [
@@ -159,9 +159,9 @@ const ImgTextSec = () => {
                                              }
                                          }}
                                      >
-    <ContactUs className="mt-4 lg:mt-0">
+    {/* <ContactUs className="mt-4 lg:mt-0">
       CONTACT US
-    </ContactUs>
+    </ContactUs> */}
     </Link>
   </div>
 

@@ -1,6 +1,6 @@
 import { useContext, useEffect, type ImgHTMLAttributes } from "react";
 import { H1, P } from "../../../styles/Typography";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ScrollContext } from "../../../context/ScrollContext";
@@ -225,7 +225,7 @@ export default function HeroSection() {
             sunt in culpa qui officia.
           </P>
           <div className="w-fit mx-auto md:mx-0">
-            <ContactUs>CONTACT US</ContactUs>
+            {/* <ContactUs>CONTACT US</ContactUs> */}
           </div>
         </div>
 

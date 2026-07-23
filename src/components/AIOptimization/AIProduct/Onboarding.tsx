@@ -99,13 +99,13 @@ const ImageCard = memo(({ card, shouldLoad }: {
       className="
         group relative overflow-hidden
         rounded-tl-[32px]
-        bg-white hover:bg-[#F7FFEC] dark:bg-slate-900
+        bg-white hover:bg-[#F7FFEC] 
         border border-[#e4e4e4]
         md:w-[450px] md:flex-shrink-0
         lg:w-auto lg:flex-shrink lg:flex-1
       "
     >
-      <div className="overflow-hidden aspect-video bg-gray-50 dark:bg-black flex items-center justify-center">
+      <div className="overflow-hidden aspect-video bg-gray-50  flex items-center justify-center">
         {shouldLoad ? (
           <img
             src={card.image}
@@ -217,14 +217,14 @@ export default function Onboarding() {
   };
 
   return (
-    <section className="dark:bg-black relative">
+    <section className=" relative">
       <div
         ref={sectionRef}
         id="benefits"
-        className="relative max-w-full px-[40px] md:px-[60px] xl:px-[160px]"
+        className="relative max-w-full py-10 px-[40px] md:px-[60px] xl:px-[160px]"
       >
         {/* Heading — character float-in */}
-        <H3 className="mb-8 lg:mb-[32px] max-w-4xl mx-auto text-left xl:text-center font-semibold dark:text-white text-[#000000] overflow-hidden">
+        <H3 className="mb-8 lg:mb-[32px] max-w-4xl mx-auto text-left xl:text-center font-semibold  text-[#000000] overflow-hidden">
           <motion.span
             className="inline-block"
             variants={floatContainerVariants}
@@ -250,13 +250,13 @@ export default function Onboarding() {
           <div className="md:hidden absolute -top-12 right-0 z-10 flex gap-2">
             <button
               onClick={() => scroll("left")}
-              className={`w-10 h-10 rounded-full bg-white dark:bg-slate-800 shadow-lg flex items-center justify-center transition-opacity duration-300 border border-gray-200 dark:border-gray-700 ${
+              className={`w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center transition-opacity duration-300 border border-gray-200  ${
                 showLeftArrow ? "opacity-100" : "opacity-0 pointer-events-none"
               }`}
               aria-label="Scroll left"
             >
               <svg
-                className="w-5 h-5 text-gray-700 dark:text-white"
+                className="w-5 h-5 text-gray-700 "
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -271,13 +271,13 @@ export default function Onboarding() {
             </button>
             <button
               onClick={() => scroll("right")}
-              className={`w-10 h-10 rounded-full bg-white dark:bg-slate-800 shadow-lg flex items-center justify-center transition-opacity duration-300 border border-gray-200 dark:border-gray-700 ${
+              className={`w-10 h-10 rounded-full bg-white  shadow-lg flex items-center justify-center transition-opacity duration-300 border border-gray-200  ${
                 showRightArrow ? "opacity-100" : "opacity-0 pointer-events-none"
               }`}
               aria-label="Scroll right"
             >
               <svg
-                className="w-5 h-5 text-gray-700 dark:text-white"
+                className="w-5 h-5 text-gray-700 "
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

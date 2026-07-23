@@ -121,7 +121,7 @@ const MegaMenu = ({
         isScrolled ? (showTopBar ? "top-[120px]" : "top-[85px]") : "top-[136px]"
       }
       translate-y-1 -translate-x-1/2
-      bg-white dark:bg-gray-800 px-12 py-10 shadow-xl z-[9998]
+      bg-white  px-12 py-10 shadow-xl z-[9998]
       transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]
       ${
         isScrolled
@@ -129,7 +129,7 @@ const MegaMenu = ({
           : "w-[88%] max-w-8xl rounded-xl"
       }`}
     >
-      <H3 className="dark:text-white">Banking and Finance Solutions</H3>
+      <H3 className="">Banking and Finance Solutions</H3>
 
       <P className="text-gray-700 text-lg mt-2 mb-4">
         FFIEC-aligned compliance, payments, and core banking platforms for US financial institutions
@@ -153,7 +153,7 @@ const MegaMenu = ({
             />
 
             <div>
-              <h3 className="text-lg  dark:text-white font-quadran   text-gray-800">
+              <h3 className="text-lg   font-quadran   text-gray-800">
                 {item.title}
               </h3>
 

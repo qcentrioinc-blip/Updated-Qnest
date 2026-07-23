@@ -4,7 +4,7 @@ import LazyVideo from "../../Global/LazyVideo";
 
 export default function Timeline() {
   return (
-    <section className="w-full  dark:bg-black sm:px-6 lg:px-10 pt-12  md:px-[60px]  px-[40px] xl:px-[160px]">
+    <section className="w-full sm:px-6 lg:px-10 pt-12  md:px-[60px]  px-[40px] xl:px-[160px]">
       {/* Heading */}
       <div className="max-w-7xl mx-auto text-center mb-10">
         <H3 className="  text-[#009565] mb-4">

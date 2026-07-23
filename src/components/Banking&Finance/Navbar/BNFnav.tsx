@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef, lazy, Suspense } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { createPortal } from "react-dom";
 import MobileProductsDropdown from "./MobileProductsDropdown";
 import MobileResourcesDropdown from "./MobileResourcesDropdown";
 import MobileBuiltForDropdown from "./MobileBuiltForDropdown";
 
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 // import { NavbarDayNightToggle } from "../../Global/DayNightToggle";
 // import DayNightToggle from "../../Global/DayNightToggle";
 
@@ -14,8 +14,8 @@ const ResourcesMenu = lazy(() => import("./ResourcesMenu"));
 const BuiltForMenu = lazy(() => import("./BuiltForMenu"));
 
 const BNFNav = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
+  // const location = useLocation();
+  // const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
   const [megaMenuOpen, setMegaMenuOpen] = useState(false);
@@ -425,7 +425,7 @@ const BNFNav = () => {
               Careers
             </Link> */}
 
-            <ContactUs onClick={(e) => {
+            {/* <ContactUs onClick={(e) => {
               e.preventDefault();
               const hasContactSection = location.pathname.includes("/products/") || location.pathname.includes("/built-for/")|| location.pathname.includes("/industries/banking-and-finance/blogs")||location.pathname.includes("/industries/banking-and-finance/marketplace");
               const target = hasContactSection ? "#contact-us" : `${base}#contact-us`;
@@ -434,7 +434,7 @@ const BNFNav = () => {
                 const el = document.getElementById('contact-us');
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
               }, 100);
-            }}>Contact Us</ContactUs>
+            }}>Contact Us</ContactUs> */}
           </div>
 
           <button
@@ -540,7 +540,7 @@ const BNFNav = () => {
         </div>
  
         <div className="mt-6 flex justify-start items-center gap-4">
-          
+{/*           
           <ContactUs onClick={(e) => {
             e.preventDefault();
             setMenuOpen(false);
@@ -551,7 +551,7 @@ const BNFNav = () => {
               const el = document.getElementById('contact-us');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
             }, 400);
-          }}>Contact Us</ContactUs>
+          }}>Contact Us</ContactUs> */}
         </div>
       </div>
 

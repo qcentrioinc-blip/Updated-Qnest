@@ -50,9 +50,9 @@ const AIProduct = () => {
       </div>
 
       <Suspense fallback={null}>
-          <CTA />
         
         <Onboarding />
+        <CTA />
         <Firm />
         <ImageGrid />
         {/* <AccordionImageGrid/> */}
@@ -75,10 +75,10 @@ const AIProduct = () => {
       />
       {/* HWD and FAQ are statically imported (used in 12+ files), so use deferred render instead */}
       {/* {showHWD && <HWD />} */}
-      {/* <DeferredLoader
+      <DeferredLoader
         loader={() => import('./UseCases')}
         delay={3500}
-      /> */}
+      />
       {/* {showFAQ && <FaqSection />} */}
       {/* <DeferredLoader
         loader={() => import("../../HomePage/AIOptimization/AIBlogs")}

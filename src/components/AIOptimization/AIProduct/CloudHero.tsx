@@ -41,10 +41,10 @@ interface CenterImageProps {
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 const NODES: NodeData[] = [
-  { label: "Misconfiguration", iconSrc: "/AIProduct/Misconfiguration.svg", highCost: "$7500", lowCost: "$750" },
-  { label: "Duplication", iconSrc: "/AIProduct/Duplication.svg", highCost: "$1200", lowCost: "$220" },
-  { label: "Idle Resources", iconSrc: "/AIProduct/IdleResource.svg", highCost: "$3500", lowCost: "$350" },
-  { label: "Overprovisioning", iconSrc: "/AIProduct/Overprovisioning.svg", highCost: "$3500", lowCost: "$252" },
+  { label: "Misconfiguration", iconSrc: "/CloudDiet/HomePage/Misconfiguration.svg", highCost: "$7500", lowCost: "$750" },
+  { label: "Duplication", iconSrc: "/CloudDiet/HomePage/Duplication.svg", highCost: "$1200", lowCost: "$220" },
+  { label: "Idle Resources", iconSrc: "/CloudDiet/HomePage/IdleResource.svg", highCost: "$3500", lowCost: "$350" },
+  { label: "Overprovisioning", iconSrc: "/CloudDiet/HomePage/Overprovisioning.svg", highCost: "$3500", lowCost: "$252" },
 ];
 
 // Hexagon clip-path used across all hex nodes

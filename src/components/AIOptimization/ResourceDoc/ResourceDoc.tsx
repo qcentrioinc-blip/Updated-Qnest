@@ -283,17 +283,17 @@ const ResourceDoc: React.FC = () => {
      Render
   --------------------------------------------- */
   return (
-    <section className="w-full dark:bg-black bg-[#FAFAFA]">
+    <section className="w-full   bg-[#FAFAFA]">
       <AINavbar />
       <div
         id="landingpage"
-        className="flex  md:px-[60px] xl:px-[160px] min-h-screen pt-28 dark:bg-black bg-[#FAFAFA]"
+        className="flex  md:px-[60px] xl:px-[160px] min-h-screen pt-28   bg-[#FAFAFA]"
       >
         {/* LEFT NAV */}
         <aside
           className={`
             fixed scrollbar-hide lg:sticky top-0 z-40 h-full w-64
-            bg-[#FAFAFA]/95 dark:text-white dark:bg-black backdrop-blur
+            bg-[#FAFAFA]/95  backdrop-blur
             border-r border-gray-200
             transition-transform duration-300
             lg:translate-x-0
@@ -306,7 +306,7 @@ const ResourceDoc: React.FC = () => {
             <div className="flex justify-end mb-4 lg:hidden">
               <button
                 onClick={() => setMobileNavOpen(false)}
-                className="font-quadran text-gray-700 dark:text-white"
+                className="font-quadran text-gray-700 "
               >
                 ✕
               </button>
@@ -323,8 +323,8 @@ const ResourceDoc: React.FC = () => {
                     onClick={() => setMobileNavOpen(false)}
                     className={`relative block text-md py-1 font-quadran font-medium rounded px-3 transition-colors ${
                       slug === item.slug
-                        ? "text-[#009565] dark:text-white font-medium before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-[#009565]"
-                        : "text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-500"
+                        ? "text-[#009565]  font-medium before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-[#009565]"
+                        : "text-gray-700  hover:bg-gray-100 "
                     }`}
                   >
                     {item.label}
@@ -343,7 +343,7 @@ const ResourceDoc: React.FC = () => {
         )}
 
         {/* MAIN CONTENT */}
-        <main className="flex-1 bg-white dark:bg-[#141414] shadow-xl m-4 lg:m-10 rounded-2xl px-6 lg:px-14 py-10 max-w-4xl">
+        <main className="flex-1 bg-white  shadow-xl m-4 lg:m-10 rounded-2xl px-6 lg:px-14 py-10 max-w-4xl">
           {/* MOBILE HEADER */}
           <div className="flex items-center justify-between mb-6 lg:hidden">
             <button
@@ -355,13 +355,13 @@ const ResourceDoc: React.FC = () => {
               </svg>
             </button>
 
-            <P className="font-quadran font-medium text-gray-700 dark:text-white">
+            <P className="font-quadran font-medium text-gray-700 ">
               {currentItem?.label}
             </P>
           </div>
 
           {/* BREADCRUMB */}
-          <div className="font-quadran text-[#009565] dark:text-white mb-6 flex items-center gap-1.5 flex-wrap text-sm">
+          <div className="font-quadran text-[#009565]  mb-6 flex items-center gap-1.5 flex-wrap text-sm">
             <Link
               to="/industries/cloud-finops-ai"
               className="hover:text-green-600 transition-colors"
@@ -369,11 +369,11 @@ const ResourceDoc: React.FC = () => {
               Home
             </Link>
             <span>&gt;</span>
-            <span className="text-[#009565] dark:text-white">
+            <span className="text-[#009565] ">
               {categoryConfig?.label}
             </span>
             <span>&gt;</span>
-            <span className="text-[#009565] font-medium dark:text-white">
+            <span className="text-[#009565] font-medium ">
               {currentItem?.label}
             </span>
           </div>
@@ -434,9 +434,9 @@ const ResourceDoc: React.FC = () => {
         {/* RIGHT TOC + AUDIO ACTIONS */}
         <aside className="w-64 hidden scrollbar-hide xl:flex flex-col gap-6 px-6 py-10 sticky top-0 h-screen overflow-y-auto">
           {/* TOC SECTION */}
-          <div className="bg-[#FDFDFD] dark:bg-black">
+          <div className="bg-[#FDFDFD]  ">
             <div className="mb-4 p-6">
-              <P className="font-semibold font-quadran text-gray-900 dark:text-white uppercase text-xs tracking-wider">
+              <P className="font-semibold font-quadran text-gray-900  uppercase text-xs tracking-wider">
                 Contents
               </P>
             </div>
@@ -465,8 +465,8 @@ const ResourceDoc: React.FC = () => {
                         href={`#${item.id}`}
                         className={`block py-1.5 px-3 -ml-[2px] border-l-2 font-quadran border-[#009565] transition-all duration-200 ${
                           activeId === item.id
-                            ? "text-[#009565] dark:text-blue-800 border-[#009565] font-medium bg-blue-50/50"
-                            : "text-gray-600 dark:text-gray-300 border-transparent hover:text-[#009565] hover:border-gray-300"
+                            ? "text-[#009565]  border-[#009565] font-medium bg-blue-50/50"
+                            : "text-gray-600  border-transparent hover:text-[#009565] hover:border-gray-300"
                         }`}
                         onClick={(e) => {
                           e.preventDefault();
@@ -493,7 +493,7 @@ const ResourceDoc: React.FC = () => {
           {/* AUDIO PLAYER */}
           <div className="flex flex-col gap-4 mt-4">
             {currentItem?.audio && (
-              <div className="w-full p-4 rounded-lg shadow dark:bg-black bg-white font-quadran">
+              <div className="w-full p-4 rounded-lg shadow   bg-white font-quadran">
                 {/* Play/Pause Button and Status */}
                 <div className="flex items-center gap-3 mb-3">
                   <button
@@ -511,7 +511,7 @@ const ResourceDoc: React.FC = () => {
                       </svg>
                     )}
                   </button>
-                  <P className="font-medium font-quadran text-gray-800 dark:text-white">
+                  <P className="font-medium font-quadran text-gray-800 ">
                     {isPlaying ? "Now Playing" : "Listen Now"}
                   </P>
                 </div>

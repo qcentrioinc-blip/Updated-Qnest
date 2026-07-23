@@ -163,7 +163,7 @@ const CONTENT: Record<string, Record<string, SplitContent>> = {
           Delivers For Enterprises
         </>
       ),
-      imageSrc: "/EnterpriseSplit.webp",
+      imageSrc: '/CloudDiet/BuiltFor/Enterprise.webp',
       paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       bulletPoints: [
         "Cut Waste Fast",
@@ -179,7 +179,7 @@ const CONTENT: Record<string, Record<string, SplitContent>> = {
     },
     "saas-application-providers": {
       headingPrimary: "Impact We Deliver",
-      imageSrc: "/DigitalBuilt.webp",
+      imageSrc: '/CloudDiet/BuiltFor/DigitalNative.webp',
       paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       bulletPoints: [
         "Cut Costs Now",
@@ -195,7 +195,7 @@ const CONTENT: Record<string, Record<string, SplitContent>> = {
     },
     "regulated-large-enterprise": {
       headingPrimary: "The Enterprise Impact We Deliver",
-      imageSrc: "/SMBBuilt.webp",
+      imageSrc: '/CloudDiet/BuiltFor/LargeEnterprise.webp',
       paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       bulletPoints: [
         "Cut Waste Fast",
@@ -294,7 +294,7 @@ export default function SplitFeature() {
       style={{ backgroundColor: themeConfig.sectionBg }}
     >
       {/* Added structural gap (gap-12 lg:gap-16 xl:gap-24) to the main grid to balance columns naturally */}
-      <div className="max-w-full px-[40px] md:px-[60px] xl:px-[160px] grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-24 items-center">
+      <div className="max-w-full px-[40px] md:px-[60px] xl:px-[160px] grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-32 items-center">
         
         {/* LEFT - IMAGE */}
         <div className="flex justify-center lg:justify-end">

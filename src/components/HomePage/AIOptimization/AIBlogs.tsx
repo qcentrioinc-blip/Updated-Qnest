@@ -25,7 +25,7 @@ const AIBlogs = () => {
   ];
 
   return (
-    <section className="w-full overflow-hidden bg-white dark:bg-black text-black pt-16 pb-16  ">
+    <section className="w-full overflow-hidden bg-white  text-black pt-16 pb-16  ">
       <div className="  px-[40px] md:px-[60px] xl:px-[160px]">
 
         {/* GRID: Stacks on mobile, side-by-side on large screens */}
@@ -46,8 +46,8 @@ const AIBlogs = () => {
             <div className="space-y-6 sm:space-y-8 xl:space-y-6">
               {/* Section Title */}
               <H2 className="">
-                <span className="inline lg:block xl:block dark:text-white">Our Resources </span>
-                {/* <span className="inline lg:block xl:block dark:text-white">Resources</span> */}
+                <span className="inline lg:block xl:block ">Our Resources </span>
+                {/* <span className="inline lg:block xl:block ">Resources</span> */}
               </H2>
 
 
@@ -80,7 +80,7 @@ const AIBlogs = () => {
           <div className="flex flex-col">
             {/* Top Description */}
             <P
-              className="text-[16px] dark:text-white  "
+              className="text-[16px]   "
 
             >
               Explore expert articles on Azure optimization, FinOps best practices, and real-world savings strategies. Learn how CloudDIET's AI-driven profiling and advanced cost intelligence help reduce waste and maximize your cloud ROI.
@@ -135,7 +135,7 @@ const AIBlogs = () => {
                     {/* Content */}
                     <div className="mt-4 flex flex-col justify-between min-h-[110px]">
                       <H4
-                        className="text-[22px] font-quadran   dark:text-white "
+                        className="text-[22px] font-quadran    "
 
                       >
                         {blog.title}

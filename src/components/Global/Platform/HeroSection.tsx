@@ -1,5 +1,5 @@
-import { useLocation, useNavigate } from "react-router-dom";
-import { ContactUs } from "../../../styles/Button";
+// import { useLocation, useNavigate } from "react-router-dom";
+// import { ContactUs } from "../../../styles/Button";
 import { H1, P } from "../../../styles/Typography";
 import { useState } from "react";
 import ContactModal from "../../AIOptimization/Navbar/ContactModal";
@@ -7,46 +7,46 @@ import ContactDrawer from "../../EHR&PMS/Navbar/ContactDrawer";
 
 const HeroSection = () => {
 
-  const { pathname } = useLocation();
-  const navigate = useNavigate();
+  // const { pathname } = useLocation();
+  // const navigate = useNavigate();
   const [modalOpen, setModalOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
 
-  type ContactDetail = {
-    contactAction: "route" | "drawer" | "modal";
-    contactRoute?: string;
-  }
+  // type ContactDetail = {
+  //   contactAction: "route" | "drawer" | "modal";
+  //   contactRoute?: string;
+  // }
 
-  const contactDetail: Record<string, ContactDetail> = {
-    "/industries/ehr-and-pms/platform": {
-      contactAction: "drawer",
-    },
-    "/industries/banking-and-finance/platform": {
-      contactAction: "route",
-      contactRoute: "/industries/banking-and-finance/contactform",
-    },
-    "/industries/high-tech/platform": {
-      contactAction: "route",
-      contactRoute: "/industries/high-tech/contactform",
-    },
-    "/industries/cloud-finops-ai/platform": {
-      contactAction: "modal",
-    },
-  };
+  // const contactDetail: Record<string, ContactDetail> = {
+  //   "/industries/ehr-and-pms/platform": {
+  //     contactAction: "drawer",
+  //   },
+  //   "/industries/banking-and-finance/platform": {
+  //     contactAction: "route",
+  //     contactRoute: "/industries/banking-and-finance/contactform",
+  //   },
+  //   "/industries/high-tech/platform": {
+  //     contactAction: "route",
+  //     contactRoute: "/industries/high-tech/contactform",
+  //   },
+  //   "/industries/cloud-finops-ai/platform": {
+  //     contactAction: "modal",
+  //   },
+  // };
 
-  const config = contactDetail[pathname] || contactDetail["/industries/banking-and-finance"];
+  // const config = contactDetail[pathname] || contactDetail["/industries/banking-and-finance"];
 
 
-  const handleContactClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    if (config.contactAction === "route" && config.contactRoute) {
-      if (config.contactRoute) navigate(config.contactRoute);
-    } else if (config.contactAction === "drawer") {
-      setDrawerOpen(true);
-    } else if (config.contactAction === "modal") {
-      setModalOpen(true);
-    }
-  };
+  // const handleContactClick = (e: React.MouseEvent) => {
+  //   e.preventDefault();
+  //   if (config.contactAction === "route" && config.contactRoute) {
+  //     if (config.contactRoute) navigate(config.contactRoute);
+  //   } else if (config.contactAction === "drawer") {
+  //     setDrawerOpen(true);
+  //   } else if (config.contactAction === "modal") {
+  //     setModalOpen(true);
+  //   }
+  // };
 
 
   return (
@@ -67,7 +67,7 @@ const HeroSection = () => {
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
             </P>
             <div className="flex mt-6 justify-center lg:justify-start">
-              <ContactUs onClick={handleContactClick}>Contact Us</ContactUs>
+              {/* <ContactUs onClick={handleContactClick}>Contact Us</ContactUs> */}
             </div>
           </div>
         </div>

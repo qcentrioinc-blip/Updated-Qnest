@@ -4,13 +4,10 @@ const Check = ({ className = "", size = 24, style }: { className?: string; size?
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useLocation } from "react-router-dom";
 import { useRef } from "react";
-import { useTheme } from '../Global/ThemeContext';
 import { H2, H3, P } from '../../styles/Typography';
 
 
 const HWD = () => {
-  const { theme } = useTheme();
-  const isDark = theme === "dark";
   const location = useLocation();
   const path = location.pathname;
 
@@ -38,50 +35,18 @@ const HWD = () => {
   const isIBS = path.startsWith("/industries/banking-and-finance/products/internet-banking-system");
 
 
-  const COLORS = {
-    ehr: {
-       topBg: isDark ? "#042F2E" : "#F5F5F5",
-      bottomBg: isDark ? "#00796b" : "#FFFFFF",
-      headingColor: isDark ? "#ffffff" : "#009565",
-     
-       textcolor: isDark ? "#ffffff" : "#141414",
-      
-      CheckColor: isDark ? "#fafafa" : "#009565",
-
-
-    },
-    banking: {
-     topBg: isDark ? "#1a1a2e" : "#F5F5F5",
-      bottomBg: isDark ? "#0f0f1a" : "#FFFFFF",
-      headingColor: isDark ? "#5b9cf6" : "#000000",
-      textcolor: isDark ? "#e0e0e0" : "#000000",
-      CheckColor: isDark ? "#5b9cf6" : "#009565",
-    },
-
-    hightech: {
-      topBg: "#141414",
-      bottomBg: "#E7D6FF",
-      headingColor: "#5B3FD1",
-      textcolor: "#CCCCCC",
-      CheckColor: "#A80040"
-    },
-    ai: {
-         topBg: isDark ? "#1a1a2e" : "#F5F5F5",
-     bottomBg: isDark ? "#ffffff" : "#FFFFFF", 
-      headingColor: isDark ? "#5b9cf6" : "##009565",
-      textcolor: isDark ? "#ffffff" : "#000000",
-      CheckColor: isDark ? "#000000" : "#009565",
+  // const COLORS = {
     
 
-    },
-    pago: {
-      topBg: isDark ? "#1a1a2e" : "#F5F5F5",
-      bottomBg: isDark ? "#0f0f1a" : "#FFFFFF",
-      headingColor: isDark ? "#5b9cf6" : "#009565",
-      textcolor: isDark ? "#e0e0e0" : "#000000",
-      CheckColor: isDark ? "#5b9cf6" : "#009565",
-    },
-  };
+  //   hightech: {
+  //     topBg: "#141414",
+  //     bottomBg: "#E7D6FF",
+  //     headingColor: "#5B3FD1",
+  //     textcolor: "#CCCCCC",
+  //     CheckColor: "#A80040"
+  //   },
+   
+  // };
   const HEADING_CONTENT = {
     ai: {
       eyebrow: "Your Success",
@@ -803,16 +768,7 @@ const HWD = () => {
   else headingContent = HEADING_CONTENT.banking;
 
   // PALETTE
-  let palette;
-  if (isPAGO) palette = COLORS.pago;
-  else if (isConciliare || isCIP || isBankfair || isAlmanac || isSAMS || isRemitree) palette = COLORS.banking;
-  else if (isEHR) palette = COLORS.ehr;
-  else if (isHighTech) palette = COLORS.hightech;
-  else if (isAI) palette = COLORS.ai;
-  else palette = COLORS.banking;
-  const { topBg, bottomBg, headingColor, textcolor, CheckColor } = palette;
-
-  const bottomTextColor = isAI ? "#009565" : textcolor;
+  
   const headingFontClass = isEHR ? "font-quadran  EHR" : "font-quadran  ";
 
 
@@ -829,7 +785,6 @@ const HWD = () => {
       {/* Top Section */}
       <div
         className="py-6 px-4 pb-8 md:p-8"
-        style={{ backgroundColor: topBg }}
       >
 
         <div className="w-14 h-14 rounded-full mb-2 overflow-hidden">
@@ -845,12 +800,11 @@ const HWD = () => {
         <H3
           className={`${headingFontClass} mb-4 text-[16px] xl:whitespace-nowrap md:text-[20px] lg:text-[24px] font-bold`}
         
-           style={{ color: isSAMS ? "#009565" : headingColor }}
         >
           {title}
         </H3>
 
-        <P className="balance-text font-quicksand" style={{ color: textcolor }}>
+        <P className="balance-text font-quicksand" >
           {description}
         </P>
 
@@ -859,13 +813,12 @@ const HWD = () => {
       {/* Bottom Section */}
       <div
         className={`${isSAMS ? "pl-6 pr-10 py-10" : "pl-6 pr-10 py-10"}`}
-        style={{ backgroundColor: bottomBg }}
       >
         <ul className="space-y-4">
           {points.map((item, idx) => (
             <li key={idx} className="flex font-quicksand items-center gap-4">
-              <Check size={25} style={{ color: CheckColor }} />
-              <P style={{ color: bottomTextColor }}>{item}</P>
+              <Check size={25}  />
+              <P >{item}</P>
             </li>
           ))}
         </ul>
@@ -879,7 +832,7 @@ const HWD = () => {
       <div
   className={`block md:hidden ${
     isEHR
-      ? "dark:bg-[#141414]"
+      ? "dark:bg-[#ffffff]"
       : isConciliare ||
         isCIP ||
         isBankfair ||
@@ -890,7 +843,7 @@ const HWD = () => {
         isSherlock ||
         isIBS ||
         isLOS ||isAI
-      ? "dark:bg-black"
+      ? "dark:bg-white"
       : ""
   }`}
 >
@@ -900,7 +853,7 @@ const HWD = () => {
             <div className="px-4 pb-4">
               <H2
                 className={`text-[#2A2A2A] ${headingFontClass} text-[24px] leading-none`}
-                 style={{ color: headingColor }}
+                 
               >
                 {headingContent.title}
               </H2>
@@ -911,7 +864,7 @@ const HWD = () => {
                 <div
                   key={i}
                   className="relative rounded-md overflow-hidden shadow-lg flex-shrink-0 w-[85vw] snap-center"
-                  style={{ backgroundColor: bottomBg }}
+                  
                 >
                   <CardContent {...card} />
                 </div>
@@ -941,7 +894,7 @@ const HWD = () => {
                     <div
                       key={i}
                      className="relative rounded-md shadow-lg flex-shrink-0 w-[85vw] h-auto"
-                      style={{ backgroundColor: bottomBg }}
+                      
                     >
                       <CardContent {...card} />
                     </div>
@@ -956,7 +909,7 @@ const HWD = () => {
       {/* ===== DESKTOP/TABLET: Original grid layout ===== */}
     <div
   className={`hidden md:block ${
-    isEHR ? "dark:bg-[#141414]" : "dark:bg-[#141414]"
+    isEHR ? "dark:bg-[#ffffff]" : "dark:bg-[#ffffff]"
   }`}
 >
         <div className="w-full relative shadow-md flex flex-col items-center py-10 md:py-8 px-4 sm:px-6 md:px-10 ">
@@ -967,7 +920,6 @@ const HWD = () => {
               <H2
                 className={`text-[#2A2A2A] ${headingFontClass}
        text-[24px] md:text-[32px] lg:text-[48px] leading-none`}
-                style={{ color: headingColor }}
               >
                 {headingContent.title}
               </H2>
@@ -985,7 +937,6 @@ const HWD = () => {
                   key={i}
                   className="relative rounded-md  overflow-hidden shadow-lg snap-center flex-shrink-0
                    w-[85%] md:w-[50%] lg:w-auto min-h-[420px] xl:min-h-[600px]"
-                  style={{ backgroundColor: bottomBg }}
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: i * 0.1, ease: 'easeOut' }}

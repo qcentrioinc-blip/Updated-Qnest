@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { H2, H4, P } from "../../../styles/Typography";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import ContactDrawer from "../../EHR&PMS/Navbar/ContactDrawer";
 
 const Headquarters = () => {
@@ -59,13 +59,13 @@ const Headquarters = () => {
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur. Duis aute irure.
             </P>
-
+{/* 
             <ContactUs
                 onClick={(e) => {
                   e.preventDefault();
                   setDrawerOpen(true);
                 }}
-              >SUBMIT APPLICATION</ContactUs>
+              >SUBMIT APPLICATION</ContactUs> */}
           </div>
         </div>
 

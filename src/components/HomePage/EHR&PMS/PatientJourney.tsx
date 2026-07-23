@@ -85,11 +85,11 @@ const strokeProgress = Math.max(
     <>
    <section
   ref={sectionRef}
-  className="relative hidden lg:block dark:bg-[#042F2E] bg-white z-30"
+  className="relative hidden lg:block  bg-white z-30"
   style={{ height: "420vh" }}
 >
 
-      <div className="sticky top-20 h-[100vh] flex flex-col items-center overflow-hidden z-30 border-l-[30px] dark:bg-[#042F2E] border-[#00AA72] bg-white">
+      <div className="sticky top-20 h-[100vh] flex flex-col items-center overflow-hidden z-30 border-l-[30px]  border-[#00AA72] bg-white">
         {/* Header - Fixed at top with spacing */}
         <div className="w-full pt-12   flex-shrink-0">
           <H2 className=" text-[#00AA72] text-center px-4 leading-tight">

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import { H2, H4, P } from "../../../styles/Typography";
 import { ScrollContext } from "../../../context/ScrollContext";
 
@@ -91,7 +91,7 @@ const ProductSec: React.FC = () => {
             </P>
           </div>
           <div className="w-full md:w-auto flex-shrink-0 lg:mt-2">
-            <ContactUs>Contact Us</ContactUs>
+            {/* <ContactUs>Contact Us</ContactUs> */}
           </div>
         </div>
 

@@ -30,7 +30,7 @@ const Frontier = () => {
     ];
 
     return (
-        <section className="w-full bg-white dark:bg-black py-12 sm:py-16 md:py-20 lg:pt-10 lg:py-0">
+        <section className="w-full bg-white py-12 sm:py-16 md:py-20 lg:pt-10 lg:py-0">
             <div className="w-full px-[40px] md:px-[60px] xl:px-[160px]">
                 <div className="grid grid-cols-1 lg:grid-cols-[400px_1fr] xl:grid-cols-[600px_1fr] gap-2 sm:gap-16 xl:gap-20">
                     {/* LEFT COLUMN – fully responsive */}

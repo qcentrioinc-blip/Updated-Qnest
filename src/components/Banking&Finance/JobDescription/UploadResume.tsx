@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import {   ContactUsDark } from "../../../styles/Button";
+// import { Link } from "react-router-dom";
 import { H1 } from "../../../styles/Typography";
 
 interface UploadResumeProps {
@@ -66,7 +65,7 @@ const UploadResume = ({ bgColor = "#FFFFFF" }: UploadResumeProps) => {
               className="w-full border border-gray-300 rounded-md px-6 py-4 text-[16px] placeholder:text-black focus:outline-none focus:ring-2 focus:ring-[#FFD600]"
             />
 
-           <Link to="/industries/banking-and-finance"><ContactUsDark>Submit</ContactUsDark></Link> 
+           {/* <Link to="/industries/banking-and-finance"><ContactUsDark>Submit</ContactUsDark></Link>  */}
           </form>
         </div>
       </div>

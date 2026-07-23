@@ -113,13 +113,13 @@ const VideoCard = memo(({ card, shouldLoad, isPlaying }: {
       className="
         group relative overflow-hidden
         rounded-tl-[32px]
-        bg-white hover:bg-[#F7FFEC] dark:bg-slate-900
+        bg-white hover:bg-[#F7FFEC] 
         border border-[#e4e4e4]
         md:w-[450px] md:flex-shrink-0
         lg:w-auto lg:flex-shrink lg:flex-1
       "
     >
-      <div className="overflow-hidden aspect-video rounded-t-[28px] bg-gray-50 dark:bg-black flex items-center justify-center">
+      <div className="overflow-hidden aspect-video rounded-t-[28px] bg-gray-50  flex items-center justify-center">
         {shouldLoad ? (
           <video
             ref={videoRef}
@@ -202,14 +202,14 @@ export default function Onboarding() {
   }, []);
 
   return (
-    <section className="dark:bg-black">
+    <section className="">
       <div
         ref={sectionRef}
         id="benefits"
         className="relative max-w-full  px-[40px]   md:px-[60px] xl:px-[160px]"
       >
         {/* Heading — character float-in */}
-        <H3 className="mb-8 lg:mb-[32px] max-w-4xl mx-auto text-left xl:text-center font-semibold dark:text-white text-[#000000] overflow-hidden">
+        <H3 className="mb-8 lg:mb-[32px] max-w-4xl mx-auto text-left xl:text-center font-semibold  text-[#000000] overflow-hidden">
           <motion.span
             className="inline-block"
             variants={floatContainerVariants}

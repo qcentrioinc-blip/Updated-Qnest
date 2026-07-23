@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import { H2, H4, P } from "../../../styles/Typography";
 
 export default function ContentInfo() {
@@ -51,7 +51,7 @@ export default function ContentInfo() {
                 }
               }}
             >
-              <ContactUs>Book Demo </ContactUs>
+              {/* <ContactUs>Book Demo </ContactUs> */}
             </Link>
           </div>
 

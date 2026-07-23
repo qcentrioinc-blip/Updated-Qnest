@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ContactUs } from '../../../styles/Button';
+// import { ContactUs } from '../../../styles/Button';
 import { H1, P } from '../../../styles/Typography';
 
 const HeroSection = () => {
@@ -36,9 +36,9 @@ PAGO streamlines payment processing with support for digital payments, electroni
     }}
     className="order-4 xl:order-none"
   >
-    <ContactUs className=" gap-2 whitespace-nowrap shrink-0">
+    {/* <ContactUs className=" gap-2 whitespace-nowrap shrink-0">
       Learn More
-    </ContactUs>
+    </ContactUs> */}
   </Link>
 
 </div>

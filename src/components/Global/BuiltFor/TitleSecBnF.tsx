@@ -25,7 +25,7 @@ export default function TitleSecBnF() {
   const content = CONTENT[builtForType || "banks"] || CONTENT["banks"];
  
   return (
-    <section className="w-full bg-white dark:bg-black relative overflow-hidden flex flex-col lg:block min-h-[650px] lg:min-h-[830px]">
+    <section className="w-full bg-white relative overflow-hidden flex flex-col lg:block min-h-[650px] lg:min-h-[830px]">
       
       {/* LEFT CONTENT */}
       <div
@@ -53,7 +53,7 @@ export default function TitleSecBnF() {
               const el = document.getElementById("contact-us");
               if (el) el.scrollIntoView({ behavior: "smooth" });
             }}
-            className="flex items-center mb-4 dark:border-white  dark:text-white  justify-center font-bold text-black border border-black hover:bg-black hover:text-white transition-colors duration-300"
+            className="flex items-center mb-4  justify-center font-bold text-black border border-black hover:bg-black hover:text-white transition-colors duration-300"
             style={{
               width: "240px",
               height: "48px",

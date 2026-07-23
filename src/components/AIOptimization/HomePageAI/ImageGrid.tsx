@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { ShieldCheck, Cpu, TrendingUp, ArrowRight } from "lucide-react";
 import { motion,  } from "framer-motion";
-// import { H2, H3, H4, P } from "../../../styles/Typography";
 import { H2, H3, H4, P } from "../../../styles/Typography";
 
 type Item = {
@@ -13,53 +12,14 @@ type Item = {
   tags?: string[];
 };
 
-// function ViewportVideo({ src }: { src: string }) {
-//   const ref = useRef<HTMLVideoElement | null>(null);
-//   const [isVisible, setIsVisible] = useState(false);
 
-//   useEffect(() => {
-//     const observer = new IntersectionObserver(
-//       ([entry]) => {
-//         setIsVisible(entry.isIntersecting);
-//       },
-//       { threshold: 0.2 }
-//     );
-
-//     if (ref.current) observer.observe(ref.current);
-
-//     return () => {
-//       if (ref.current) observer.unobserve(ref.current);
-//     };
-//   }, []);
-
-//   useEffect(() => {
-//     if (!ref.current) return;
-//     if (isVisible) {
-//       ref.current.play();
-//     } else {
-//       ref.current.pause();
-//     }
-//   }, [isVisible]);
-
-//   return (
-//     <video
-//       ref={ref}
-//       src={isVisible ? src : undefined}
-//       muted
-//       loop
-//       playsInline
-//       preload="none"
-//       className="w-full h-full object-cover"
-//     />
-//   );
-// }
 
 const items: Item[] = [
   {
     title: "Secure Access",
     description:
       "Provide read-only access to billing and configuration metadata. We never access your data, files, databases, or applications. CloudDIET operates at the Azure control plane level using Resource Manager APIs, ensuring zero performance impact.",
-    image: "/CDImage.webp",
+    image: '/CloudDiet/HomePage/Secure_access.webp',
     icon: ShieldCheck,
     cta: "Get Started",
     tags: ["Read-Only", "Control Plane", "Zero Trust"],
@@ -68,7 +28,7 @@ const items: Item[] = [
     title: "AI Analysis",
     description:
       "Our profiling engine analyzes hundreds of measures to identify misconfigurations, waste, and optimization opportunities across your cloud estate. It examines resource configurations, usage metrics, and billing data to pinpoint over-provisioning.",
-    image: "/RealiseSaving.webp",
+    image: '/CloudDiet/HomePage/AI_Analysis.webp',
     icon: Cpu,
     cta: "Learn More",
     tags: ["Profiling Engine", "Usage Metrics", "Optimization"],
@@ -77,7 +37,7 @@ const items: Item[] = [
     title: "Realize Savings",
     description:
       "We provide an assured savings estimate before implementation. Our team helps execute recommended optimizations, and you only pay a percentage of the savings realized through our performance-based model.",
-    image: "/AIAnalysis.webp",
+    image: '/CloudDiet/HomePage/Realise_savings.webp',
     icon: TrendingUp,
     cta: "See Results",
     tags: ["Assured Savings", "Performance Model", "ROI"],
@@ -88,7 +48,7 @@ export default function ImageGrid() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="relative w-full dark:bg-black pt-4 pb-14">
+    <section className="relative w-full pt-4 pb-14">
       
       {/* =========================================================
           1. MOBILE & TABLET STATIC LAYOUT (< xl screens)
@@ -96,7 +56,7 @@ export default function ImageGrid() {
       <div className="block xl:hidden max-w-2xl mx-auto space-y-10 px-[40px] md:px-[60px] xl:px-[160px]">
         <div className="space-y-4">
           <H2>How CloudDIET Works For You</H2>
-          <P className="text-gray-700 dark:text-gray-300 max-w-xl">
+          <P className="text-gray-700  max-w-xl">
             A secure, four-step process combining AI-powered analysis with
             engineering expertise to guarantee cloud savings, without ever
             accessing your data.
@@ -119,7 +79,7 @@ export default function ImageGrid() {
             return (
               <div
                 key={index}
-                className="bg-gray-50 dark:bg-gray-900/60 rounded-3xl p-6 border border-gray-100 dark:border-gray-800 space-y-5"
+                className="bg-gray-50 rounded-3xl p-6 border border-gray-100 space-y-5"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-[#009565] flex items-center justify-center text-white shadow-md">
@@ -128,9 +88,9 @@ export default function ImageGrid() {
                   <H3 className="text-[#009565]">{item.title}</H3>
                 </div>
 
-                <P className="text-gray-700 dark:text-gray-300">{item.description}</P>
+                <P className="text-gray-700 ">{item.description}</P>
 
-                <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700">
+                <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100  shadow-sm border border-gray-200 ">
                   <img
                     src={item.image}
                     alt={item.title}

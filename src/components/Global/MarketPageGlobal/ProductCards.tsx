@@ -202,7 +202,6 @@ export const App: React.FC = () => {
           sticky 
           ${stickyTopClass} 
           z-40 
-          dark:bg-slate-900
           bg-white 
           py-3 
           shadow-sm 
@@ -242,7 +241,6 @@ export const App: React.FC = () => {
           sm:grid-cols-2 
           lg:grid-cols-3 
           gap-12 
-          dark:bg-slate-900
           px-6 sm:px-10 lg:px-20 
           pt-12
           pb-12
@@ -254,7 +252,7 @@ export const App: React.FC = () => {
             onClick={() => handleCardClick(item)}
             className="
       group
-      relative dark:bg-slate-700 bg-[#F2F2F2] 
+      relative  bg-[#F2F2F2] 
       rounded-2xl 
       p-8 
       flex flex-col 
@@ -270,7 +268,7 @@ export const App: React.FC = () => {
           >
             {/* Title + Arrow */}
             <div className="flex items-start justify-between mb-3">
-              <H3 className=" dark:text-white">
+              <H3 className="">
                 {item.title}
               </H3>
 

@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { H2, H3, P } from "../../styles/Typography";
-import { ContactUs } from "../../styles/Button";
+// import { ContactUs } from "../../styles/Button";
 import { Link } from "react-router-dom";
 
 const WhatWeDoIn = () => {
@@ -43,7 +43,6 @@ const WhatWeDoIn = () => {
   ];
 
   const images = ["/BNFWhat.svg", "/WhatWe2.svg", "/WhatWe3.svg"];
-const isDark = document.documentElement.classList.contains("dark");
   // Track desktop breakpoint (xl = 1280px)
   useEffect(() => {
     const mq = window.matchMedia("(min-width: 1280px)");
@@ -124,7 +123,7 @@ const isDark = document.documentElement.classList.contains("dark");
   return (
     <div
       ref={targetRef}
-      className="relative bg-white dark:bg-black text-black w-full"
+      className="relative bg-white  text-black w-full"
       id="benefits"
       style={
         isDesktop
@@ -157,7 +156,7 @@ const isDark = document.documentElement.classList.contains("dark");
           <div className="shrink-0 flex justify-between items-start gap-8 xl:px-6 ">
             <div className="max-w-4xl ">
               <H2 className="font-bold text-[#00AA72]">
-                Who <span className="text-[#141414] dark:text-white"> We </span> Serve
+                Who <span className="text-[#141414] "> We </span> Serve
               </H2>
               <P className="pt-2 text-justify  xl:pr-20  leading-tight">
                 Financial institutions of all sizes trust our solutions to
@@ -166,7 +165,7 @@ const isDark = document.documentElement.classList.contains("dark");
                 needs.
               </P>
             </div>
-            <Link
+            {/* <Link
               to="#contact-us"
               onClick={(e) => {
                 const el = document.getElementById("contact-us");
@@ -179,7 +178,7 @@ const isDark = document.documentElement.classList.contains("dark");
               <ContactUs className="hidden xl:block gap-2 whitespace-nowrap shrink-0">
                 Learn More
               </ContactUs>
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile Button */}
@@ -194,9 +193,9 @@ const isDark = document.documentElement.classList.contains("dark");
                 }
               }}
             >
-              <ContactUs className="w-full flex items-center justify-center gap-2 text-black">
+              {/* <ContactUs className="w-full flex items-center justify-center gap-2 text-black">
                 CONTACT US
-              </ContactUs>
+              </ContactUs> */}
             </Link>
           </div>
 
@@ -225,7 +224,7 @@ const isDark = document.documentElement.classList.contains("dark");
                 return (
                   <div
                     key={item.id}
-                    className={`relative cursor-pointer overflow-hidden rounded-lg transition-all duration-500 ease-in-out ${isOpen ? "bg-[#E5FFF7] dark:bg-slate-950" : "bg-[#F6F6F6] dark:bg-gray-700 "
+                    className={`relative cursor-pointer overflow-hidden rounded-lg transition-all duration-500 ease-in-out ${isOpen ? "bg-[#E5FFF7] " : "bg-[#F6F6F6] "
                       }`}
                     style={{ minHeight: isOpen ? "auto" : "100px" }}
                     onClick={() => {
@@ -234,7 +233,7 @@ const isDark = document.documentElement.classList.contains("dark");
                   >
                     {/* Number */}
                     <span
-                      className={`absolute left-6 top-3 text-6xl font-bold leading-none transition-colors duration-500 ${isOpen ? "text-[#3E3E3E] dark:text-white" : "text-[#00AA72]"
+                      className={`absolute left-6 top-3 text-6xl font-bold leading-none transition-colors duration-500 ${isOpen ? "text-[#3E3E3E]" : "text-[#00AA72]"
                         }`}
                     >
                       {String(item.id).padStart(2, "0")}
@@ -244,11 +243,7 @@ const isDark = document.documentElement.classList.contains("dark");
                     <motion.h3
                       className="absolute left-28 top-6 pr-20 text-2xl lg:text-3xl font-semibold"
                       initial={false}
-                   animate={{
-  color: isOpen
-    ? (isDark ? "#FFFFFF" : "#3E3E3E")
-    : (isDark ? "#D1D5DB" : "#000000")
-}}
+                  
                       transition={{ duration: 0.5, ease: "easeInOut" }}
                     >
                       {item.title}

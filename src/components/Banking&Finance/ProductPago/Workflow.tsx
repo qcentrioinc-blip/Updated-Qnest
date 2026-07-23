@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useContext, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ScrollContext } from "../../../context/ScrollContext";
 import { H2 } from "../../../styles/Typography";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../Global/ThemeContext";
 
@@ -225,9 +225,9 @@ const textColor = useMemo(() => {
             }
           }}
         >
-          <ContactUs className="w-full flex items-center justify-center gap-2 text-black">
+          {/* <ContactUs className="w-full flex items-center justify-center gap-2 text-black">
             Explore PAGO Features
-          </ContactUs>
+          </ContactUs> */}
         </Link>
       </div>
 
@@ -338,9 +338,9 @@ const textColor = useMemo(() => {
                   }
                 }}
               >
-                <ContactUs className="w-full flex items-center justify-center gap-2 text-black">
+                {/* <ContactUs className="w-full flex items-center justify-center gap-2 text-black">
                   Explore PAGO Features
-                </ContactUs>
+                </ContactUs> */}
               </Link>
             </div>
           </div>

@@ -4,7 +4,7 @@ import { H2, H4, P } from "../../../styles/Typography";
 
 export default function Intro() {
   return (
-    <section className="bg-white dark:bg-black w-full  py-4 lg:px-8 xl:px-0 lg:py-10" >
+    <section className="bg-white w-full  py-4 lg:px-8 xl:px-0 lg:py-10" >
       <div className="max-w-full px-[40px] md:px-[60px] xl:px-[160px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 items-stretch">
 
 
@@ -22,7 +22,7 @@ export default function Intro() {
           </div>
 
           {/* STATS */}
-          <div className=" flex flex-col md:flex-row mt-8 lg:mt-20 xl:mt-12 gap-4 lg:gap-8 text-gray-900">
+          <div className=" flex flex-col md:flex-row mt-8 lg:mt-20 xl:mt-12 gap-4 lg:gap-8">
             <div className=" flex flex-col  space-y-2 lg:space-y-4 ">
               <div className=" text-2xl  text-[#009565] lg:text-4xl font-quadran   ">$0</div>
               <P className=" " >Initial Cost</P>
@@ -46,9 +46,9 @@ export default function Intro() {
 
           {/* ITEM 1 */}
           <div className="flex items-start gap-4">
-            <img src="/icon1.svg" className="w-6 h-6 " />
+            {/* <img src="/icon1.svg" className="w-6 h-6 " /> */}
             <div >
-              <H4 className="text-lg text-[#009565]  text-gray-900">
+              <H4 className="text-lg text-[#009565] ">
                 Aligned Incentive Model
               </H4>
               <P className=" max-w-lg    pr-2 sm:pr-0 mt-2">
@@ -59,9 +59,9 @@ export default function Intro() {
 
           {/* ITEM 2 */}
           <div className="flex items-start gap-4">
-            <img src="/icon2.svg" className="w-6 h-6 " />
+            {/* <img src="/icon2.svg" className="w-6 h-6 " /> */}
             <div>
-              <H4 className="text-lg text-[#009565]  text-gray-900">
+              <H4 className="text-lg text-[#009565] ">
                 No Minimum Commitment
               </H4>
               <P className=" max-w-lg   pr-2 sm:pr-0 mt-2">
@@ -72,9 +72,9 @@ export default function Intro() {
 
           {/* ITEM 3 */}
           <div className="flex items-start gap-4">
-            <img src="/icon3.svg" className="w-6 h-6 " />
+            {/* <img src="/icon3.svg" className="w-6 h-6 " /> */}
             <div>
-              <H4 className=" text-[#009565]  text-gray-900">
+              <H4 className=" text-[#009565] ">
                 Verified Billing Metrics
               </H4>
               <P className=" max-w-lg    pr-2 sm:pr-0 mt-2">

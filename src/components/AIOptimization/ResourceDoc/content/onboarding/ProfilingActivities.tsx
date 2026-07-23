@@ -14,7 +14,7 @@ const ProfilingActivities: React.FC = () => {
 
       <P>CloudDIET profiling is divided into three categories:</P>
 
-      <ol className="list-decimal list-inside dark:text-white space-y-6">
+      <ol className="list-decimal list-inside  space-y-6">
         <li className="font-regular font-quadran leading-[120%] text-[10px] xl:text-[12px]">
           <b>Billing:</b> CloudDIET analyzes your Azure Billing to capture
           actual spend, including discounts, Savings Plans, and Reserved
@@ -33,7 +33,7 @@ const ProfilingActivities: React.FC = () => {
         </li>
       </ol>
 
-      <h2 className="font-quadran text-xl dark:text-white md:text-2xl lg:text-3xl my-6">
+      <h2 className="font-quadran text-xl  md:text-2xl lg:text-3xl my-6">
         Frequently Asked Questions
       </h2>
 
@@ -153,7 +153,7 @@ const ProfilingActivities: React.FC = () => {
           </thead>
           <tbody>
             {/* Azure SQL */}
-            <tr className="align-top dark:text-white">
+            <tr className="align-top ">
               <td className="border border-gray-300 px-4 py-3 font-regular font-quadran leading-[120%] text-[10px] xl:text-[12px]">
                 Azure SQL
               </td>
@@ -193,7 +193,7 @@ const ProfilingActivities: React.FC = () => {
             </tr>
 
             {/* Azure Storage (Restored from broken JSX) */}
-            <tr className="align-top dark:text-white">
+            <tr className="align-top ">
               <td className="border border-gray-300 px-4 py-3 font-regular font-quadran leading-[120%] text-[10px] xl:text-[12px]">
                 Azure Storage
               </td>

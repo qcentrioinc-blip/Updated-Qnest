@@ -24,7 +24,7 @@ export default function WhyQnest() {
   return (
     <>
       {/* DESKTOP */}
-      <div ref={ref} className="hidden dark:bg-[#042F2E]  lg:block relative h-[200vh]">
+      <div ref={ref} className="hidden   lg:block relative h-[200vh]">
         <div className="sticky w-full top-0 h-screen overflow-hidden bg-transparent">
           {/* DECORATIVE STARS – DESKTOP ONLY */}
 <div className="hidden lg:block absolute inset-0 pointer-events-none z-0">
@@ -60,10 +60,10 @@ className="absolute top-40 left-20 w-7 scale-110"
 
           {/* TITLE */}
           <motion.div style={{ opacity: titleOpacity }} className="absolute top-24 w-full z-10     text-center ">
-            <H2 className=" text-[#00AA72] dark:text-[#00AA72]   mb-4">
+            <H2 className=" text-[#00AA72]    mb-4">
               One Unified Platform
             </H2>
-            <P className=" mx-auto max-w-3xl dark:text-white text-black">
+            <P className=" mx-auto max-w-3xl  text-black">
               Unified Clinicapp seamlessly integrates EHR and practice management into one intuitive, HIPAA-compliant, cloud-based solution for modern healthcare. 
             </P>  
           </motion.div>
@@ -72,12 +72,12 @@ className="absolute top-40 left-20 w-7 scale-110"
             <div className="grid grid-cols-12 gap-8 max-w-full mx-auto w-full  ">
               {cards.map((c, i) => (
                 <motion.div key={i} style={{ marginTop: i !== 1 ? sideOffset : 0 }} className="col-span-12 lg:col-span-4">
-                  <div className="bg-transparent border-5 border-[#00AA72] dark:border-amber-400 rounded-br-[6rem] rounded-tl-[6rem] h-[550px]   py-10 px-6   flex flex-col justify-between">
+                  <div className="bg-transparent border-5 border-[#00AA72]  rounded-br-[6rem] rounded-tl-[6rem] h-[550px]   py-10 px-6   flex flex-col justify-between">
                     <div>
-                      <H2 className="text-[#00AA72] dark:text-white">{c.num}</H2>
-                      <H3 className=" text-[#00AA72] dark:text-white">{c.title}</H3>
+                      <H2 className="text-[#00AA72]">{c.num}</H2>
+                      <H3 className=" text-[#00AA72]">{c.title}</H3>
                     </div>
-                    <H4 className="text-[#2A2A2A] dark:text-white">{c.desc}</H4>
+                    <H4 className="text-[#2A2A2A]">{c.desc}</H4>
                   </div>
                 </motion.div>
               ))}

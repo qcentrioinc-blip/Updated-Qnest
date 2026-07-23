@@ -46,12 +46,12 @@ const TestimonialEHR = () => {
 
   return (
     <> 
-      <section className="dark:bg-[#042F2E] overflow-hidden">
-        <div className="max-w-full  dark:bg-[#042F2E] px-[40px] md:px-[60px] xl:px-[160px]">
+      <section className="overflow-hidden">
+        <div className="max-w-full  px-[40px] md:px-[60px] xl:px-[160px]">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-8 lg:gap-12 items-start">
             {/* Left Heading */}
             <div className="space-y-4 transition-all duration-1000 ease-out">
-              <H2 className="mt-4 dark:text-white">
+              <H2 className="mt-4  ">
                 Seamlessly Integrating Care and Operations 
               </H2>
             </div>
@@ -117,7 +117,7 @@ const TestimonialEHR = () => {
                     className="w-10 h-10 object-contain overflow-visible"
                   />
 
-                  <H4 className="text-[#2A2A2A] dark:text-white">
+                  <H4 className="text-[#2A2A2A]  ">
                     {item.title}
                   </H4>
 

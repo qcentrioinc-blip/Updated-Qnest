@@ -1,4 +1,4 @@
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import { H2, H4, P } from "../../../styles/Typography";
 
 const ScrollingCards = () => {
@@ -45,7 +45,7 @@ const ScrollingCards = () => {
                                 </P>
 
                                 {/* List Items - Responsive Icons & Text */}
-                                <ContactUs>CONTACT US</ContactUs>
+                                {/* <ContactUs>CONTACT US</ContactUs> */}
                             </div>
                         </div>
 

@@ -31,7 +31,7 @@ export default function SlideReveal() {
   return (
     <section
       ref={sectionRef}
-      className={`relative bg-white  dark:bg-black ${isDesktop ? "h-[160vh]" : "h-auto"
+      className={`relative bg-white ${isDesktop ? "h-[160vh]" : "h-auto"
         }`}
     >
       <div
@@ -57,7 +57,7 @@ export default function SlideReveal() {
 
             {/* LEFT CONTENT */}
             <div>
-              <H2 className="xl:mb-6 dark:text-white py-4 xl:py-0">
+              <H2 className="xl:mb-6  py-4 xl:py-0">
                 Built Around <br className="hidden md:block"/> Your Business
               </H2>
 
@@ -122,7 +122,7 @@ export default function SlideReveal() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white border dark:bg-slate-900 border-[#9C9C9C] rounded-lg p-6 xl:p-10 transition-all duration-300"
+                  className="bg-white border  border-[#9C9C9C] rounded-lg p-6 xl:p-10 transition-all duration-300"
                 >
                   <img
                     src={item.icon}
@@ -130,7 +130,7 @@ export default function SlideReveal() {
                     className="w-8 h-8 mb-4"
                   />
 
-                  <H4 className="mb-3 dark:text-white ">{item.title}</H4>
+                  <H4 className="mb-3  ">{item.title}</H4>
                   <P>{item.text}</P>
                 </div>
               ))}

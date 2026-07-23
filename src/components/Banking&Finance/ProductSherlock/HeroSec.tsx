@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import { H1, P } from "../../../styles/Typography";
 
 export default function ContentInfo() {
@@ -20,7 +20,7 @@ export default function ContentInfo() {
           </P>
 
           <Link to="/marketplace">
-            <ContactUs> Explore SHERLOCK </ContactUs>
+            {/* <ContactUs> Explore SHERLOCK </ContactUs> */}
           </Link>
 
           <P className="text-white/80 max-w-sm pt-10 xl:pt-32">

@@ -40,7 +40,7 @@ const SavingPlans: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-            <tr className="align-top dark:text-white">
+            <tr className="align-top ">
               <td className="border border-gray-300 px-4 py-3 font-semibold">
                 Actual Billed Spend
               </td>
@@ -53,7 +53,7 @@ const SavingPlans: React.FC = () => {
               </td>
             </tr>
 
-            <tr className="align-top bg-gray-100 dark:bg-gray-800">
+            <tr className="align-top bg-gray-100 ">
               <td className="border border-gray-300 px-4 py-3 font-semibold">
                 What-if Savings Plan Spend
               </td>
@@ -63,7 +63,7 @@ const SavingPlans: React.FC = () => {
               </td>
             </tr>
 
-            <tr className="align-top dark:text-white">
+            <tr className="align-top ">
               <td className="border border-gray-300 px-4 py-3 font-semibold">
                 What-if Pay-As-You-Go Spend
               </td>
@@ -73,7 +73,7 @@ const SavingPlans: React.FC = () => {
               </td>
             </tr>
 
-            <tr className="align-top bg-gray-100 dark:bg-gray-800">
+            <tr className="align-top bg-gray-100 ">
               <td className="border border-gray-300 px-4 py-3 font-semibold">
                 Recommended Savings Plan Commitment
               </td>
@@ -168,7 +168,7 @@ const SavingPlans: React.FC = () => {
         underlying SKUs may be excluded:
       </P>
 
-      <ul className="list-disc dark:text-white list-inside space-y-2">
+      <ul className="list-disc  list-inside space-y-2">
         <li className="font-regular font-quadran leading-[120%] text-[10px] xl:text-[12px]">
           Virtual Machines
         </li>

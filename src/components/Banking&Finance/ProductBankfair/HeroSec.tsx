@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { H1, P } from "../../../styles/Typography";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 
 const HeroSec = () => {
   return (
@@ -50,7 +50,7 @@ const HeroSec = () => {
             to="/marketplace"
             
           >
-            <ContactUs>Explore our Solutions </ContactUs>
+            {/* <ContactUs>Explore our Solutions </ContactUs> */}
           </Link>
       </div>
 

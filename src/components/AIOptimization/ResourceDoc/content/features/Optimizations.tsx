@@ -21,7 +21,7 @@ const Optimizations: React.FC = () => {
         as:
       </P>
 
-      <ul className="list-disc dark:text-white list-inside space-y-3">
+      <ul className="list-disc list-inside space-y-3">
         <li className="font-regular font-quadran leading-[120%] text-[10px] xl:text-[12px]">
           Categorizing savings by effort level: Minimal, Moderate, and
           Significant.

@@ -36,7 +36,7 @@ const Overview: React.FC = () => {
           {items.map((item, index) => (
            <div
   key={index}
-  className="relative bg-white dark:bg-[#089768] rounded-none overflow-hidden rounded-bl-[5rem] shadow-sm px-8 py-8 min-h-[280px]"
+  className="relative bg-white  rounded-none overflow-hidden rounded-bl-[5rem] shadow-sm px-8 py-8 min-h-[280px]"
 >
   {/* Bottom Left Curved Cut */}
   
@@ -48,11 +48,11 @@ const Overview: React.FC = () => {
       className="w-12 h-12 object-contain"
     />
 
-    <H4 className="text-[#0F9D7A] dark:text-[#16C79A]">
+    <H4 className="text-[#0F9D7A] ">
       {item.title}
     </H4>
 
-    <P className="text-[#5F6368] dark:text-gray-300 leading-7">
+    <P className="text-[#5F6368] leading-7">
       {item.description}
     </P>
   </div>

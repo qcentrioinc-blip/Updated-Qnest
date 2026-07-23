@@ -38,7 +38,7 @@ export default function AnimatedFooter() {
   };
 
   return (
-    <footer className="bg-white dark:bg-black dark:text-white text-black py-4">
+    <footer className="bg-white text-black py-4">
       <div className="max-w-8xl mx-auto px-6 md:px-12 lg:px-16">
 
         {/* Top Section */}

@@ -170,9 +170,9 @@ const ArticleCard: React.FC<ArticleData> = ({ date, imageSrc, title, subtitle, d
           style={{ borderRadius: '8px' }}
         />
       </div>
-      <P className="text-gray-600 my-2 text-sm dark:text-white">{date}</P>
-      <H4 className="mb-4 dark:text-[#00AA72]">{subtitle}</H4>
-      <P className="text-gray-700 dark:text-white mb-4">{description}</P>
+      <P className="text-gray-600 my-2 text-sm ">{date}</P>
+      <H4 className="mb-4 ">{subtitle}</H4>
+      <P className="text-gray-700  mb-4">{description}</P>
     </div>
   );
 };
@@ -196,14 +196,14 @@ const ImageCard: React.FC = () => {
   }, [pathname]);
 
   return (
-    <section className="pt-10 dark:bg-black">
+    <section className="pt-10 ">
       <div className="max-w-7xl mx-auto xl:max-w-8xl pb-10 xl:mx-auto px-6 xl:px-6">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-4 mb-6 sm:mb-8 lg:mb-12">
           <H2 className="text-[#00AA72] text-xl sm:text-2xl lg:text-3xl flex-shrink-0">
             Banking & Finance Insights
           </H2>
           <Link to="/industries/banking-and-finance/blogs">
-            <button className="group flex items-center justify-center w-auto h-[44px] sm:h-[48px] px-[20px] sm:px-[24px] py-[10px] sm:py-[12px] rounded-[8px] font-quicksand font-bold text-[14px] sm:text-[16px] bg-[#141414] text-white transition-all duration-300 ease-in-out border border-transparent hover:bg-white hover:text-[#141414] hover:border-[#010101] hover:border-b-[4px] hover:-translate-y-[2px] cursor-pointer dark:border-white shadow-[0_6px_2px_-4px_rgba(14,14,44,0.1)]">
+            <button className="group flex items-center justify-center w-auto h-[44px] sm:h-[48px] px-[20px] sm:px-[24px] py-[10px] sm:py-[12px] rounded-[8px] font-quicksand font-bold text-[14px] sm:text-[16px] bg-[#141414] text-white transition-all duration-300 ease-in-out border border-transparent hover:bg-white hover:text-[#141414] hover:border-[#010101] hover:border-b-[4px] hover:-translate-y-[2px] cursor-pointer  shadow-[0_6px_2px_-4px_rgba(14,14,44,0.1)]">
               View All
               <span className="flex items-center gap-[8px]">
                 <span className="relative flex items-center justify-center w-[20px] sm:w-[23px] h-[20px] sm:h-[23px]">

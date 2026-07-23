@@ -71,11 +71,11 @@ const CONTENT: Record<string, Record<string, SectionContent>> = {
         desc: "CloudDIET enables enterprise IT teams to identify, analyze, and fix any Azure waste quickly and efficiently across complex multi-subscription environments.",
       },
       cards: [
-        { id: 1, title: "VM Rightsizing", desc: "CloudDIET finds oversized VMs across subscriptions to cut compute costs.", image: "/BuiltFor/Scissor.svg" },
-        { id: 2, title: "Storage Optimization", desc: "Identifies unused storage and wrong tiers draining your Azure budget.", image: "/BuiltFor/data.svg" },
-        { id: 3, title: "SKU Changes", desc: "Spots bad SKUs and plans costing extra in PaaS services.", image: "/BuiltFor/Budget.svg" },
-        { id: 4, title: "License Savings", desc: "Recommends better reservations and discounts for database workloads.", image: "/BuiltFor/Discount.svg" },
-        { id: 5, title: "Usage Fixes", desc: "Reveals low-utilization resources wasting money across environments.", image: "/BuiltFor/Teamwork.svg" },
+        { id: 1, title: "VM Rightsizing", desc: "CloudDIET finds oversized VMs across subscriptions to cut compute costs.", image: "/CloudDiet/BuiltFor/Enterprise/Scissor.svg" },
+        { id: 2, title: "Storage Optimization", desc: "Identifies unused storage and wrong tiers draining your Azure budget.", image: "/CloudDiet/BuiltFor/Enterprise/data.svg" },
+        { id: 3, title: "SKU Changes", desc: "Spots bad SKUs and plans costing extra in PaaS services.", image: "/CloudDiet/BuiltFor/Enterprise/Budget.svg" },
+        { id: 4, title: "License Savings", desc: "Recommends better reservations and discounts for database workloads.", image: "/CloudDiet/BuiltFor/Enterprise/Discount.svg" },
+        { id: 5, title: "Usage Fixes", desc: "Reveals low-utilization resources wasting money across environments.", image: "/CloudDiet/BuiltFor/Enterprise/Teamwork.svg" },
       ],
     },
     "saas-application-providers": {
@@ -84,11 +84,11 @@ const CONTENT: Record<string, Record<string, SectionContent>> = {
         desc: "CloudDIET enables SaaS teams to scale their apps efficiently and reliably without wasteful Azure spending or any performance compromises across workloads.",
       },
       cards: [
-        { id: 1, title: "App Scaling", desc: "CloudDIET converts Azure Functions from fixed costly plans to flexible usage-based pricing automatically.", image: "/BuiltFor/Window.svg" },
-        { id: 2, title: "Event Optimization", desc: "CloudDIET automatically spots unused accounts and broken triggers wasting money every single day.", image: "/BuiltFor/optimization.svg" },
-        { id: 3, title: "Registry Cleanup", desc: "CloudDIET finds unused container registries automatically after CI/CD deployments complete.", image: "/BuiltFor/clean-up.svg" },
-        { id: 4, title: "Integration Savings", desc: "CloudDIET automatically spots unused accounts and broken triggers wasting money every single day.", image: "/BuiltFor/integration.svg" },
-        { id: 5, title: "Multi-Region Fixs", desc: "CloudDIET optimizes App Services across multiple regions for global apps efficiently and reliably.", image: "/BuiltFor/speedometer.svg" },
+        { id: 1, title: "App Scaling", desc: "CloudDIET converts Azure Functions from fixed costly plans to flexible usage-based pricing automatically.", image: "/CloudDiet/BuiltFor/Saas/Window.svg" },
+        { id: 2, title: "Event Optimization", desc: "CloudDIET automatically spots unused accounts and broken triggers wasting money every single day.", image: "/CloudDiet/BuiltFor/Saas/optimization.svg" },
+        { id: 3, title: "Registry Cleanup", desc: "CloudDIET finds unused container registries automatically after CI/CD deployments complete.", image: "/CloudDiet/BuiltFor/Saas/clean-up.svg" },
+        { id: 4, title: "Integration Savings", desc: "CloudDIET automatically spots unused accounts and broken triggers wasting money every single day.", image: "/CloudDiet/BuiltFor/Saas/integration.svg" },
+        { id: 5, title: "Multi-Region Fixs", desc: "CloudDIET optimizes App Services across multiple regions for global apps efficiently and reliably.", image: "/CloudDiet/BuiltFor/Saas/speedometer.svg" },
       ],
     },
     "regulated-large-enterprise": {
@@ -97,11 +97,11 @@ const CONTENT: Record<string, Record<string, SectionContent>> = {
         desc: "CloudDIET fixes Azure waste in multi-region setups for safe enterprise scaling.",
       },
       cards: [
-        { id: 1, title: "Lorum Ipsum", desc: "Switches costly multi-master Cosmos DB to read replicas where writes stay low.", image: "/BuiltFor/Database.svg" },
-        { id: 2, title: "RI Waste", desc: "Finds unused reserved instances across regions and replaces with active ones.", image: "/BuiltFor/Recycle2.svg" },
-        { id: 3, title: "App Services", desc: "Rightsizes Elastic App Service plans stuck in dedicated compute without auto-scale.", image: "/BuiltFor/Money2.svg" },
-        { id: 4, title: "Synapse Savings", desc: "Applies 3-year reserved instances to Synapse workloads, cutting the untime costs by 81%.", image: "/BuiltFor/Add.svg" },
-        { id: 5, title: "Storage Defender", desc: "Disables expensive Defender for Storage on backup accounts with high transactions.", image: "/BuiltFor/CloudCompute.svg" },
+        { id: 1, title: "Lorum Ipsum", desc: "Switches costly multi-master Cosmos DB to read replicas where writes stay low.", image: "/CloudDiet/BuiltFor/LargeEnterprise/Database.svg" },
+        { id: 2, title: "RI Waste", desc: "Finds unused reserved instances across regions and replaces with active ones.", image: "/CloudDiet/BuiltFor/LargeEnterprise/Recycle2.svg" },
+        { id: 3, title: "App Services", desc: "Rightsizes Elastic App Service plans stuck in dedicated compute without auto-scale.", image: "/CloudDiet/BuiltFor/LargeEnterprise/Money2.svg" },
+        { id: 4, title: "Synapse Savings", desc: "Applies 3-year reserved instances to Synapse workloads, cutting the untime costs by 81%.", image: "/CloudDiet/BuiltFor/LargeEnterprise/Add.svg" },
+        { id: 5, title: "Storage Defender", desc: "Disables expensive Defender for Storage on backup accounts with high transactions.", image: "/CloudDiet/BuiltFor/LargeEnterprise/CloudCompute.svg" },
       ],
     },
   },
@@ -266,8 +266,8 @@ export default function FiveCardGradientSection() {
                     snap-center flex-shrink-0 w-[95%] md:w-[55%] mx-auto
                     relative rounded-xl p-6 border border-gray-200
                     bg-white
-                    shadow-sm hover:shadow-lg
-                    transform transition-all duration-500 ease-out hover:-translate-y-2
+                    
+                    transform transition-all duration-500 ease-out 
                   "
                 >
                   <div className="w-10 h-10 rounded-full mb-3 bg-gray-50 border border-gray-100">
@@ -306,10 +306,10 @@ export default function FiveCardGradientSection() {
             <div
               key={card.id}
               className="
-                hidden xl:block relative rounded-xl p-6 border border-gray-200
+                hidden xl:block relative rounded-xs p-6 border border-gray-200
                 bg-white
-                shadow-sm hover:shadow-lg
-                transform transition-all duration-500 ease-out hover:-translate-y-2
+                
+                transform transition-all duration-500 ease-out 
                 w-[95%] mx-auto
               "
             >

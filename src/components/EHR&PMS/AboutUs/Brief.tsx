@@ -2,13 +2,13 @@ import {  H2, P } from "../../../styles/Typography";
 
 const Brief = () => {
   return (
-    <section className="w-full  py-12 md:pb-16  dark:bg-[#141414] lg:pb-20  ">
+    <section className="w-full  py-12 md:pb-16  lg:pb-20  ">
       <div className="px-[40px] md:px-[60px] xl:px-[160px] justify-between  items-center  ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-36 items-center">
           
           <div className="space-y-4">
                 <H2
-                className="text-[#00AA72]  dark:text-[#00AA72]   leading-tight"
+                className="text-[#00AA72]   leading-tight"
                
                                 >
               Tools Designed for Clinical Excellence

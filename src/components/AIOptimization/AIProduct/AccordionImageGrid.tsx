@@ -42,7 +42,7 @@ export default function AccordionImageGrid() {
   const activeItem = items[activeIndex];
 
   return (
-    <section className="relative w-full dark:bg-black">
+    <section className="relative w-full  ">
       {/* =========================================================
           MOBILE & TABLET STATIC LAYOUT (< lg screens)
          ========================================================= */}
@@ -79,7 +79,7 @@ export default function AccordionImageGrid() {
           {items.map((item, index) => (
             <div
               key={index}
-              className="bg-gray-50 dark:bg-gray-900/60 rounded-2xl p-5 sm:p-6 border border-gray-100 dark:border-gray-800 space-y-5"
+              className="bg-gray-50  rounded-2xl p-5 sm:p-6 border border-gray-100 space-y-5"
             >
               {/* Content */}
               <div>
@@ -96,7 +96,7 @@ export default function AccordionImageGrid() {
               </div>
 
               {/* Image directly below content */}
-              <div className="w-full aspect-[4/3] rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700">
+              <div className="w-full aspect-[4/3] rounded-xl overflow-hidden bg-gray-100  shadow-sm border border-gray-200 ">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -180,8 +180,8 @@ export default function AccordionImageGrid() {
                     onClick={() => setActiveIndex(index)}
                     className={`transition-all duration-300 cursor-pointer overflow-hidden  ${
                       isActive
-                        ? "bg-[#f2faf5] dark:bg-[#002e1f]/40 border-t-[6px] border-[#009565] p-5 shadow-sm"
-                        : "p-4 hover:bg-gray-50 dark:hover:bg-gray-800/30"
+                        ? "bg-[#f2faf5] border-t-[6px] border-[#009565] p-5 shadow-sm"
+                        : "p-4 hover:bg-gray-50 "
                     }`}
                   >
                     <div className="flex items-start justify-between">
@@ -211,7 +211,7 @@ export default function AccordionImageGrid() {
                     >
                       <div className="overflow-hidden">
                         <div className="space-y-3 pt-2">
-                          <P className="text-gray-700 dark:text-gray-300">
+                          <P className="text-gray-700  ">
                             {item.description}
                           </P>
 

@@ -88,8 +88,8 @@ const ProcessStep: React.FC<ProcessStepProps> = ({ title, description, index }) 
       {/* LEFT side */}
       <div className="w-[calc(50%-48px)] flex justify-end relative min-h-[180px]">
         {isLeft ? (
-          <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-md p-6 w-full text-left">
-            <H3 className="mt-2 font-semibold dark:text-white">{title}</H3>
+          <div className="bg-white  rounded-2xl shadow-md p-6 w-full text-left">
+            <H3 className="mt-2 font-semibold ">{title}</H3>
             <P className="mt-3 text-left">{description}</P>
           </div>
         ) : (
@@ -109,8 +109,8 @@ const ProcessStep: React.FC<ProcessStepProps> = ({ title, description, index }) 
       {/* RIGHT side */}
       <div className="w-[calc(50%-48px)] flex justify-start relative min-h-[180px]">
         {!isLeft ? (
-          <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-md p-6 w-full text-justify">
-            <H3 className="mt-2 font-semibold dark:text-white">{title}</H3>
+          <div className="bg-white  rounded-2xl shadow-md p-6 w-full text-justify">
+            <H3 className="mt-2 font-semibold ">{title}</H3>
             <P className="mt-3 text-justify">{description}</P>
           </div>
         ) : (
@@ -160,7 +160,7 @@ const Process = () => {
   return (
     <>
       {/* ── DESKTOP: vertical alternating timeline ── */}
-      <div className="hidden xl:block bg-[#EFEFEF] dark:bg-black py-20 px-6" id="our-process" style={{ fontFamily: "Bricolage Grotesque" }}>
+      <div className="hidden xl:block bg-[#EFEFEF] py-20 px-6" id="our-process" style={{ fontFamily: "Bricolage Grotesque" }}>
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <H2 className="text-[#00AA72]">Our Implementation Process</H2>
@@ -186,7 +186,7 @@ const Process = () => {
       </div>
 
       {/* ── MOBILE: unchanged ── */}
-      <div className="block dark:bg-black xl:hidden bg-gray-100 py-8 xl:py-10 px-6">
+      <div className="block xl:hidden bg-gray-100 py-8 xl:py-10 px-6">
         <div className="max-w-2xl mx-auto">
           <H2 className="text-[#00AA72] text-center mb-8">Our Implementation Process</H2>
 
@@ -204,7 +204,7 @@ const Process = () => {
                   {item.step}
                 </div>
                 <div className="flex flex-col lg:pl-2 items-start">
-                  <H3 className="my-4 lg:my-2  dark:text-white font-semibold">{item.title}</H3>
+                  <H3 className="my-4 lg:my-2   font-semibold">{item.title}</H3>
                   <P className="">{item.description}</P>
                 </div>
               </motion.div>

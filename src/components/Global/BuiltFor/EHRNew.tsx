@@ -167,19 +167,19 @@ const SECTION_CONFIG: Record<string, Record<string, SectionConfig>> = {
       heading: "Challenges for Enterprises",
       cards: [
         {
-          icon: CareIcon,
+          icon: '/CloudDiet/BuiltFor/Enterprise/recycle_bin.svg',
           title: "Cloud Cost Visibility",
           description:
             "Limited visibility into cloud costs across multiple subscriptions and resources.",
         },
         {
-          icon: ComplianceIcon,
+          icon: '/CloudDiet/BuiltFor/Enterprise/inefficient.svg',
           title: "Resource Optimization",
           description:
             "Inability to identify and address overprovisioned resources and waste.",
         },
         {
-          icon: BillingIcon,
+          icon:  '/CloudDiet/BuiltFor/Enterprise/eye.svg',
           title: "Complex Cloud Billing",
           description:
             "Managing cloud billing across multiple services and regions is challenging.",
@@ -190,19 +190,19 @@ const SECTION_CONFIG: Record<string, Record<string, SectionConfig>> = {
       heading: "Challenges for SaaS Providers",
       cards: [
         {
-          icon: CareIcon,
+          icon: '/CloudDiet/BuiltFor/Saas/balance_scale.svg',
           title: "Multi-Tenant Cost Leakage",
           description:
             "Difficulty identifying and addressing cost leaks across multiple tenants.",
         },
         {
-          icon: ComplianceIcon,
+          icon:'/CloudDiet/BuiltFor/Saas/block_user.svg',
           title: "CI/CD Waste Management",
           description:
             "Managing infrastructure waste from CI/CD pipelines and development environments.",
         },
         {
-          icon: BillingIcon,
+          icon: '/CloudDiet/BuiltFor/Saas/calendar_star.svg',
           title: "Resource Scaling Complexity",
           description:
             "Challenges in optimizing resource scaling for application services.",
@@ -213,19 +213,19 @@ const SECTION_CONFIG: Record<string, Record<string, SectionConfig>> = {
       heading: "Challenges for Regulated Enterprises",
       cards: [
         {
-          icon: CareIcon,
+          icon: '/CloudDiet/BuiltFor/LargeEnterprise/eye_1.svg',
           title: "Complex Infrastructure",
           description:
             "Managing complex cloud infrastructure across multiple regions and services.",
         },
         {
-          icon: ComplianceIcon,
+          icon: '/CloudDiet/BuiltFor/LargeEnterprise/warning.svg',
           title: "Compliance and Governance",
           description:
             "Meeting regulatory requirements while optimizing cloud costs and resources.",
         },
         {
-          icon: BillingIcon,
+          icon: '/CloudDiet/BuiltFor/LargeEnterprise/performance.svg',
           title: "Cost Risk Management",
           description:
             "Managing significant cloud spend risks without proper visibility and optimization tools.",
@@ -317,16 +317,17 @@ const EHRNew = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="relative rounded-md shadow-sm hover:shadow-md transition duration-300 overflow-hidden"
+              className="relative border
+    border-gray-200  transition duration-300 overflow-hidden"
               style={{
               }}
             >
               {/* Top Border */}
               <div
-                className="h-2"
+                className="h-2 bg-[#009565]"
               />
               <div className="p-6">
-                <img src={card.icon} alt={card.title} className="w-10 h-10 mb-8" />
+                <img src={card.icon} alt={card.title} className="w-12 h-12 mb-6" />
                 <H3
                   className=" mb-2"
                 >

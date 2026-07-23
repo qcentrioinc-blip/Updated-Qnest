@@ -37,7 +37,7 @@ interface Feature {
 const features: Feature[] = [
   {
     id: 1,
-    title: " Interactive Forecasting & Alerts",
+    title: "Interactive Forecasting & Alerts",
     description: "Predict future spend, set budgets, and spot issues fast. Track savings plans and fixes across subscriptions. ",
     color: "bg-blue-600",
     highlight: "text-blue-500",
@@ -45,7 +45,7 @@ const features: Feature[] = [
   },
   {
     id: 2,
-    title: "Granular Cost Attribution ",
+    title: "Granular Cost",
     description: "View costs at the table or SKU level, not just workspace summaries. More detail than Azure billing. ",
     color: "bg-purple-600",
     highlight: "text-purple-500",
@@ -53,7 +53,7 @@ const features: Feature[] = [
   },
   {
     id: 3,
-    title: " Resource Cost Drilling ",
+    title: "Resource Cost Drilling ",
     description: "Drill into any resource to see cost drivers and usage patterns. Identify optimization potential in detail. ",
     color: "bg-emerald-600",
     highlight: "text-emerald-500",
@@ -85,7 +85,7 @@ const features: Feature[] = [
   },
   {
     id: 7,
-    title: " Anomaly Detection ",
+    title: "Anomaly Detection ",
     description: "Receive alerts when spending spikes or deviates from expected patterns. Respond quickly to overspend risks. ",
     color: "bg-green-600",
     highlight: "text-green-500",
@@ -130,7 +130,7 @@ const FeatureVisualization: React.FC<FeatureVisualizationProps> = ({
   return (
     <div className="w-full">
       {/* Image Container */}
-      <div className="relative w-full h-[350px] sm:h-[400px] md:h-[450px] lg:h-[450px] xl:h-[400px] rounded-xl lg:rounded-2xl overflow-hidden shadow-2xl bg-white dark:bg-black">
+      <div className="relative w-full h-[350px] sm:h-[400px] md:h-[450px] lg:h-[450px] xl:h-[400px] rounded-xl lg:rounded-2xl overflow-hidden shadow-2xl bg-white ">
         {animate ? (
           // Desktop animation - SMOOTHED SLIDE UP
           <AnimatePresence initial={false} mode="wait">
@@ -173,7 +173,7 @@ const FeatureVisualization: React.FC<FeatureVisualizationProps> = ({
             />
  
             <div className="absolute top-4 left-4">
-              <div className="flex items-center gap-2 bg-white/95  dark:bg-black backdrop-blur-sm px-3 py-1.5 rounded-full shadow-lg">
+              <div className="flex items-center gap-2 bg-white/95   backdrop-blur-sm px-3 py-1.5 rounded-full shadow-lg">
                 <div className={`w-3 h-3 rounded-full ${features[activeFeature].color}`}></div>
                 <span className="font-quicksand font-regular text-gray-900">
                   Feature {features[activeFeature].id}
@@ -260,14 +260,14 @@ const FeatureItem: React.FC<FeatureItemProps> = ({
       `}
     >
       <div className="flex items-center gap-4 mb-6">
-        <span className={`text-5xl dark:text-white sm:text-6xl font-bold opacity-20 ${feature.highlight}`}>0{feature.id}</span>
+        <span className={`text-5xl sm:text-6xl font-bold opacity-20 ${feature.highlight}`}>0{feature.id}</span>
       </div>
-      <h3 className="text-3xl sm:text-2xl md:text-2xl font-bold text-[#00AA72]  dark:text-white   mb-4 sm:mb-6 leading-tight">
+      <H3 className=" text-[#00AA72]    mb-2">
         {feature.title}
-      </h3>
-      <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-lg">
+      </H3>
+      <P className=" text-gray-600 max-w-lg">
         {feature.description}
-      </p>
+      </P>
     </div>
   );
 };
@@ -694,7 +694,7 @@ const hasAnimatedOnMobile = useRef(false);
   }
  
   return (
-    <div ref={containerRef} className="relative dark:bg-black w-full overflow-visible">
+    <div ref={containerRef} className="relative  w-full overflow-visible">
       {/* Mobile Navigation */}
       <div className="lg:hidden sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-lg">
         <div className="max-w-8xl mx-6">
@@ -910,12 +910,12 @@ const hasAnimatedOnMobile = useRef(false);
           <section
             ref={storyboardRef}
             id="security"
-            className="relative w-full px-4 bg-white  dark:bg-black font-quadran  "
+            className="relative w-full px-4 bg-white   font-quadran  "
           >
             <H3 className="text-[#00AA72]">
               Multi-Dimensional Cost Views
               {/* <br className="hidden lg:block" />
-              <span className="hidden dark:text-white lg:inline-block lg:ml-60 xl:ml-100" />
+              <span className="hidden lg:inline-block lg:ml-60 xl:ml-100" />
               Cost Views */}
             </H3>
  

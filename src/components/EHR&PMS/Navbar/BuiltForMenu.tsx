@@ -51,7 +51,7 @@ const BuiltForMenu = ({
             onMouseLeave={handleCloseMenus}
             className={`fixed left-1/2 ${isScrolled ? (showTopBar ? "top-[112px]" : "top-[78px]") : "top-[128px]"}
 translate-y-1 -translate-x-1/2
-bg-white  dark:bg-[#00AA72]   px-24 py-10 shadow-xl z-[9998]
+bg-white    px-24 py-10 shadow-xl z-[9998]
 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]
 ${isScrolled
                     ? "w-[96%] max-w-none rounded-xl"
@@ -72,7 +72,7 @@ ${isScrolled
                             if (item.title === "Home Healthcare") prefetchHomeHealthcareImages();
                             if (item.title === "Clinics and Hospitals") prefetchClinicsAndHospitalsImages();
                         }}
-                        className="block cursor-pointer pointer-events-auto dark:hover:bg-[#00AA72]   hover:bg-gray-100 p-2 rounded-lg transition-colors"
+                        className="block cursor-pointer pointer-events-auto    hover:bg-gray-100 p-2 rounded-lg transition-colors"
                     >
                         <h3 className="text-lg font-quicksand font-bold text-gray-900">{item.title}</h3>
                         <P className="text-gray-600 text-base leading-snug">{item.desc}</P>

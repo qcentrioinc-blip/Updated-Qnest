@@ -34,7 +34,7 @@ export default function AuditAnimation() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-white dark:bg-black xl:h-[280vh]"
+      className="relative w-full bg-white xl:h-[280vh]"
     >
       {/* ✅ Sticky with navbar offset */}
       <div className="xl:sticky xl:top-[70px] xl:h-[calc(100vh-70px)] xl:overflow-hidden">

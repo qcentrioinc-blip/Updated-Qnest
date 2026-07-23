@@ -8,7 +8,7 @@ const CloudDiet = () => {
 
   return (
     <>
-      <section className="relative w-full overflow-hidden bg-[#fafafa] dark:bg-black sm:py-16">
+      <section className="relative w-full overflow-hidden bg-[#fafafa]  sm:py-16">
         <div className="mx-auto w-full max-w-[1600px] px-6 sm:px-10 lg:px-16 xl:px-24 2xl:px-40">
           <div className="grid grid-cols-1 xl:grid-cols-2 items-center gap-12 xl:gap-20">
             {/* LEFT CONTENT */}
@@ -45,13 +45,13 @@ const CloudDiet = () => {
 
             {/* RIGHT CONTENT */}
             <div className="flex items-center justify-center xl:justify-end">
-              <div className="relative flex justify-center xl:mt-12">
+              <div className="relative flex justify-center">
                 <div className="px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-center">
-                  {/* <img src="/ClouddietLogo2.svg" alt="CloudDIET Logo" className="h-20 sm:h-24 lg:h-28 w-auto" /> */}
+                  <img src= "/CloudDiet/Features/Clouddiet.jpg" alt="CloudDIET Logo" className="h-20 sm:h-24 lg:h-32 w-auto" />
 
-                  <h3 className="font-quadran font-medium text-black dark:text-[#00AA72] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center">
+                  {/* <h3 className="font-quadran font-medium text-black  text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center">
                     Cloud<span className="font-medium">DIET</span>
-                  </h3>
+                  </h3> */}
                 </div>
               </div>
             </div>

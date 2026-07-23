@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { H1, P } from "../../../styles/Typography";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 
 export default function HeroSection() {
   const bullets = [
@@ -55,9 +55,9 @@ export default function HeroSection() {
                                              }
                                          }}
                                      >
-                         <ContactUs className="w-full mt-4 flex items-center justify-center gap-2 text-black">
+                         {/* <ContactUs className="w-full mt-4 flex items-center justify-center gap-2 text-black">
                                           Request A Demo
-                         </ContactUs>
+                         </ContactUs> */}
                          </Link>
             </div>
 

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import { H2, H4, P } from "../../../styles/Typography";
 import { Settings, LifeBuoy, Plug } from "lucide-react";
 
@@ -56,7 +56,7 @@ export default function Sec_4() {
                 }
               }}
             >
-              <ContactUs>CONTACT US</ContactUs>
+              {/* <ContactUs>CONTACT US</ContactUs> */}
             </Link>
           </div>
 

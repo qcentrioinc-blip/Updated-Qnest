@@ -40,7 +40,7 @@ const features = [
   },
   {
     title: "Secure & Compliant",
-    description: "Zero data access, full customer control",
+    description: "Zero data access",
     paragraph: "Security is built into our foundation. We operate on a strict read-only basis, ensuring your sensitive data remains completely isolated and under your control.",
     image: "/AIProduct/Feature4.svg",
     points: [
@@ -73,7 +73,7 @@ export default function FeatureCards() {
         <div className="grid lg:grid-cols-[1fr_2fr] gap-10 items-start">
           
           {/* LEFT SIDE */}
-          <div className="text-white lg:sticky top-28 flex flex-col gap-4">
+          <div className="text-white lg:sticky top-28 flex flex-col gap-2">
             <div>
               <P className="font-semibold text-white mb-2">
                 {currentFeature.title}
@@ -84,7 +84,7 @@ export default function FeatureCards() {
             </div>
             
             {/* ADDED STICKY PARAGRAPH HERE */}
-            <P className="text-white max-w-md opacity-90 leading-relaxed font-quadran font-light">
+            <P className="text-white max-w-md opacity-90 ">
               {currentFeature.paragraph}
             </P>
           </div>

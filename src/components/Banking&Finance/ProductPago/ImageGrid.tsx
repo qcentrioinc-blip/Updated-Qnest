@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 import { H2, H3, H4, P } from "../../../styles/Typography";
 import Image1 from "/Pago/ImageGrid1.webp";
 import Image2 from "/Pago/ImageGrid2.webp";
@@ -43,9 +43,9 @@ const ImageGrid = () => {
                                 }
                             }}
                         >
-            <ContactUs className="w-full flex  mt-4 items-center justify-center gap-2 text-black">
+            {/* <ContactUs className="w-full flex  mt-4 items-center justify-center gap-2 text-black">
               Learn More 
-            </ContactUs>
+            </ContactUs> */}
             </Link>
   </div>
  

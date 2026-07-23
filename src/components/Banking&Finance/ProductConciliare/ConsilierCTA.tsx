@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 
 const ConsilierCTA = () => {
     const features = [
@@ -127,7 +127,7 @@ const ConsilierCTA = () => {
                                 }
                             }}
                         >
-                            <ContactUs>CONTACT US</ContactUs>
+                            {/* <ContactUs>CONTACT US</ContactUs> */}
                         </Link>
 
                     </div>

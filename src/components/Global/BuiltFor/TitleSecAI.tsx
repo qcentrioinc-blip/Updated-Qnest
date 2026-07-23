@@ -44,7 +44,7 @@ const CLOUD_FINOPS_CONTENT: IndustryBuiltForMap = {
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     cta: "Optimize Now",
-    bgImage: "/BuiltForImg.jpg",
+    bgImage: '/CloudDiet/BuiltFor/Digital_Native.webp',
   },
   enterprises: {
     heading: (
@@ -55,7 +55,7 @@ const CLOUD_FINOPS_CONTENT: IndustryBuiltForMap = {
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     cta: "Start Your Scan",
-    bgImage: "/BuiltForImg.jpg",
+    bgImage: '/CloudDiet/BuiltFor/enterprise_builtfor.webp',
   },
   "regulated-large-enterprise": {
     heading: (
@@ -66,7 +66,7 @@ const CLOUD_FINOPS_CONTENT: IndustryBuiltForMap = {
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     cta: "Get Started",
-    bgImage: "/BuiltForImg.jpg",
+    bgImage: '/CloudDiet/BuiltFor/Large_enterprises.webp',
   },
 };
 
@@ -254,7 +254,7 @@ export default function TitleSecAI() {
     <section className="relative w-full h-full lg:h-[40vh] xl:h-[80vh] overflow-hidden flex items-center">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover xl:bg-contain bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover  bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${content.bgImage})` }}
       />
 

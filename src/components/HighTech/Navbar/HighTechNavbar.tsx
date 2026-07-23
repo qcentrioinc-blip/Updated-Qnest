@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { ContactUsDark } from "../../../styles/Button";
 import { H3, P } from "../../../styles/Typography";
 import { ChevronDown } from "lucide-react";
 
@@ -332,7 +331,6 @@ const HighTechNavbar = () => {
           </Link>
 
           <Link to="/industries/high-tech/contactform">
-            <ContactUsDark>Contact Us</ContactUsDark>
           </Link>
         </div>
         </nav>
@@ -546,7 +544,6 @@ const HighTechNavbar = () => {
 
         <div className="mt-6 flex justify-start items-center">
           <Link to="/industries/high-tech/contactform" onClick={() => setMenuOpen(false)}>
-            <ContactUsDark>Contact Us</ContactUsDark>
           </Link>
         </div>
       </div>

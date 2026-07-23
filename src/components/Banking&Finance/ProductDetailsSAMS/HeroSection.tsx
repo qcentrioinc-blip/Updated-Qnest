@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef } from 'react';
-import { ContactUs } from '../../../styles/Button';
+// import { ContactUs } from '../../../styles/Button';
 import { H1, P } from '../../../styles/Typography';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -339,7 +339,7 @@ const HeroSection: React.FC = () => {
               }
             }}
           >
-            <ContactUs>Contact Us </ContactUs>
+            {/* <ContactUs>Contact Us </ContactUs> */}
           </Link>
             </motion.div>
           </motion.div>

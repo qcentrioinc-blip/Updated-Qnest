@@ -2,9 +2,9 @@ import ContactSecHT from "../ContactSecHT"
 import FooterHT from "../FooterHT"
 import WorkProfile from "./WorkProfile"
 import HighTechNavbar from "../Navbar/HighTechNavbar"
-import Banner from "./Banner"
-import BorderCTA from "./BorderCTA"
-import CTA from "./CTA"
+// import Banner from "./Banner"
+// import BorderCTA from "./BorderCTA"
+// import CTA from "./CTA"
 import Feature from "./Feature"
 
 import Gallery from "./Gallery"
@@ -17,13 +17,13 @@ const AboutUs = () => {
       <HighTechNavbar />
       <div className="relative  ">
         {/* <HeroSection /> */}
-        <CTA />
+        {/* <CTA /> */}
       </div>
 
-      <Banner />
+      {/* <Banner /> */}
       
       <WorkProfile />
-      <BorderCTA />
+      {/* <BorderCTA /> */}
 
       <Gallery />
 

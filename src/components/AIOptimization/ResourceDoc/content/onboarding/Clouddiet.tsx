@@ -2,7 +2,7 @@ import { H3, P } from "../../../../../styles/Typography";
 
 const Clouddiet = () => {
   return (
-    <div className="space-y-2 dark:text-white">
+    <div className="space-y-2 ">
       <H3 className="text-[#009565]">
         Why Clouddiet
       </H3>

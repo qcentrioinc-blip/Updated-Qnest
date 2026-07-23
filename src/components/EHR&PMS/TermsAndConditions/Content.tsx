@@ -3,9 +3,9 @@ import { H2, H3, P } from "../../../styles/Typography";
 
 const Content: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-black py-16 px-4 md:px-16 lg:px-32 mt-4 lg:pt-32">
+    <div className="min-h-screen bg-gray-50   py-16 px-4 md:px-16 lg:px-32 mt-4 lg:pt-32">
       {/* Page Heading */}
-      <H2 className=" text-gray-900 dark:text-white mb-8">
+      <H2 className=" text-gray-900  mb-8">
         Terms And Conditions
       </H2>
 
@@ -25,11 +25,11 @@ const Content: React.FC = () => {
 
       {/* Sections */}
       <section className="mt-6 space-y-6">
-        <H3 className=" text-gray-800 dark:text-white">Information Collected</H3>
+        <H3 className=" text-gray-800 ">Information Collected</H3>
         <P className="text-gray-700 leading-relaxed">
           We collect the following categories of Personal Information from you in connection with our products/solutions and services. Personal Information in certain categories may overlap with other categories:
         </P>
-        <ul className="list-disc  font-quicksand text-[18px] list-inside dark:text-white text-gray-700 space-y-1">
+        <ul className="list-disc  font-quicksand text-[18px] list-inside  text-gray-700 space-y-1">
           <li>Identifiers, such as your real name, account name, Internet Protocol address, email address, and other similar identifiers.</li>
           <li>Personal Information categories listed in the California Consumer Records statute, including physical address, telephone number, and financial information used to process payment.</li>
           <li>Characteristics of protected classifications under California or federal law, such as your gender and age, but only for Kaneriko Software employees or applicants for employment.</li>
@@ -43,11 +43,11 @@ const Content: React.FC = () => {
       </section>
 
       <section className="mt-6 space-y-6">
-        <H3 className=" text-gray-800 dark:text-white">How Information is Used</H3>
+        <H3 className=" text-gray-800 ">How Information is Used</H3>
         <P className="text-gray-700 leading-relaxed">
           You may provide Personal Information to Kaneriko Software in a variety of ways. While visiting the Site, we may ask you to register and/or provide Personal Information for purposes of interacting with the Site. As other examples, Kaneriko Software may receive Personal Information when you:
         </P>
-        <ul className="list-disc font-quicksand text-[18px]  list-inside dark:text-white text-gray-700 space-y-1">
+        <ul className="list-disc font-quicksand text-[18px]  list-inside  text-gray-700 space-y-1">
           <li>Provide or update licensing or account information.</li>
           <li>Register for or attend Kaneriko Software-hosted or sponsored promotions and events (such as conferences, tradeshows or webinars).</li>
           <li>Order or use Kaneriko Software products/solutions, services or other offerings.</li>
@@ -57,21 +57,21 @@ const Content: React.FC = () => {
       </section>
 
       <section className="mt-6 space-y-6">
-        <H3 className=" text-gray-800 dark:text-white">Sharing and Disclosure</H3>
+        <H3 className=" text-gray-800 ">Sharing and Disclosure</H3>
         <P className="text-gray-700 leading-relaxed">
           When collecting Personal Information, we will specifically describe what information is required in order to provide you with the products/solutions or service, enter you in the promotion you have requested, respond to your inquiry or comment, or otherwise communicate with you. In order to access certain Kaneriko Software services, you may be required to sign in with Kaneriko Software Single Sign-On (SSO) credentials or another authentication mechanism. By signing into one Kaneriko Software service, you may be automatically signed into other Kaneriko Software services that use these credentials.
         </P>
       </section>
 
       <section className="mt-6 space-y-6">
-        <H3 className="text-gray-800 dark:text-white">Cookies and Tracking</H3>
+        <H3 className="text-gray-800 ">Cookies and Tracking</H3>
         <P className="text-gray-700 leading-relaxed">
           A cookie is a small data text file that a web site sends to your browser, which is then stored on your computer. The cookie is unique to the computer you are using and can only be read by the web site that placed the cookie on your computer. We use cookies to improve the Site, analyze website traffic, and personalize content and services. You can decline cookies in your browser, but some features may not be fully functional.
         </P>
       </section>
 
       <section className="mt-6 space-y-6">
-        <H3 className=" text-gray-800 dark:text-white">User Choices</H3>
+        <H3 className=" text-gray-800 ">User Choices</H3>
         <P className="text-gray-700 leading-relaxed">
           You may decline to accept a cookie. You may also decline persistent cookies set by the Site by selecting an option on your browser to reject cookies. You may also withdraw your consent at any time by changing your browser settings. We collect minimal analytics information to improve the Site.
         </P>

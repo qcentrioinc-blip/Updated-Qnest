@@ -85,7 +85,7 @@ const AIFooter = () => {
       }}
     >
       {/* Dark Overlay: Makes sure text is readable over the image */}
-      <div className="absolute inset-0 dark:bg-[#141414] bg-[#00AA72]/30 z-0 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[#00AA72]/30 z-0 pointer-events-none"></div>
 
       {/* ========== TOP SECTION ========== */}
       <div className="relative w-full pt-6 sm:pt-10 z-10">

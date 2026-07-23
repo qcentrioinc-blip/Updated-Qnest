@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { H1, H4, P } from "../../../styles/Typography";
-import { ContactUs } from "../../../styles/Button";
+// import { ContactUs } from "../../../styles/Button";
 
 const HeroSec1 = () => {
   return (
@@ -22,7 +22,7 @@ const HeroSec1 = () => {
 
           {/* CTA */}
           <Link to="/marketplace">
-            <ContactUs>Discover Bankfair Today</ContactUs>
+            {/* <ContactUs>Discover Bankfair Today</ContactUs> */}
           </Link>
 
           {/* Image */}
@@ -99,7 +99,7 @@ const HeroSec1 = () => {
               </P>
 
               <Link to="/marketplace">
-                <ContactUs>Discover Bankfair Today</ContactUs>
+                {/* <ContactUs>Discover Bankfair Today</ContactUs> */}
               </Link>
             </div>
 

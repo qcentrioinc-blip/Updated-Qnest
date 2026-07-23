@@ -75,13 +75,13 @@ export default function PrivacyPolicyAI() {
     </div>
   </div>
 </section>
-    <section className="w-full bg-white dark:bg-slate-950  py-10 text-gray-800">
+    <section className="w-full bg-white    py-10 text-gray-800">
       <div className=" max-w-8xl xl:px-10 px-4 xl:mx-10 ">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-12">
           
           {/* MAIN CONTENT */}
           <article className="prose space-y-6 prose-gray max-w-none">
-            <H1 className='dark:text-white'>Privacy Policy</H1>
+            <H1 className=''>Privacy Policy</H1>
             <P className="text-sm text-gray-500">
               Last updated: October 12, 2023
             </P>
@@ -91,7 +91,7 @@ export default function PrivacyPolicyAI() {
             </P>
 
             <section className="scroll-mt-24"  id="collect ">
-              <H4 className='dark:text-white my-4'>The Information We Collect</H4>
+              <H4 className=' my-4'>The Information We Collect</H4>
               <P>
               Unlike traditional cloud management tools, Qnest Global operates on a strict “No Data Access” principle. We never access, read, or store the actual content of your databases, files, applications, or customer records. 
               </P>
@@ -103,11 +103,11 @@ export default function PrivacyPolicyAI() {
             </section>
 
             <section className="scroll-mt-24"  id="process ">
-              <H4 className='dark:text-white my-4'> How We Use Your Information</H4>
+              <H4 className=' my-4'> How We Use Your Information</H4>
               <P>
               How We Use Your Information 
               </P>
-              <ul className="list-disc list-inside dark:text-white   py-4">
+              <ul className="list-disc list-inside    py-4">
                 <li className='text-[18px] font-quicksand '>Profi le your cloud resources to identify misconfigurations and waste. </li>
                 <li className='text-[18px] font-quicksand '>Generate accurate savings recommendations (e.g., identifying idle resources or improper SKUs). </li>
                 <li className='text-[18px] font-quicksand '>Provide dashboards and reporting on cost trends. </li>
@@ -116,14 +116,14 @@ export default function PrivacyPolicyAI() {
             </section>
 
             <section className="scroll-mt-24"  id="legal"> 
-              <H4 className='dark:text-white my-4'>The “Read-Only” Assurance</H4>
+              <H4 className=' my-4'>The “Read-Only” Assurance</H4>
               <P>
                 We utilize Azure RBAC (Role-Based Access Control) with the principle of least privilege. Our access is strictly scoped to the management plane (Reader, Billing Reader). We have zero capability to write, modify, or delete your cloud resources or data. 
               </P>
             </section>
 
             <section className="scroll-mt-24"  id="share"> 
-              <H4 className='dark:text-white my-4'>Data Security & Retention</H4>
+              <H4 className=' my-4'>Data Security & Retention</H4>
               <P> <span className='font-bold '>Encryption:</span> All metadata is encrypted at rest (AES-256) and in transit (TLS 1.2+). </P>
               
               <P> <span className='font-bold '>Isolation:</span>  Your data is logically isolated from other customers.  </P>
@@ -134,7 +134,7 @@ export default function PrivacyPolicyAI() {
             </section>
 
             <section className="scroll-mt-24"  id="cookies ">
-              <H4 className='dark:text-white my-4'>Sharing of Information</H4>
+              <H4 className=' my-4'>Sharing of Information</H4>
               <P>
                We do not sell your personal information. We may share data: </P>
 
@@ -145,11 +145,11 @@ export default function PrivacyPolicyAI() {
             </section>
 
             <section className="scroll-mt-24"  id="interna tional">
-              <H4 className='dark:text-white my-4'>Your Rights (CCPA/GDPR)</H4>
+              <H4 className=' my-4'>Your Rights (CCPA/GDPR)</H4>
               <P>
                Depending on your jurisdiction (e.g., California, EU, UK), you may have the right to: 
               </P>
-              <ul className="list-disc list-inside dark:text-white py-4">
+              <ul className="list-disc list-inside  py-4">
                 <li className='text-[18px] font-quicksand '>Access the personal information we hold. . </li>
                 <li className='text-[18px] font-quicksand '>Request correction or deletion of your data.  </li>
                 <li className='text-[18px] font-quicksand '>Opt out of any processing (though this may limit our ability to optimize your cloud).  </li>
@@ -158,14 +158,14 @@ export default function PrivacyPolicyAI() {
             </section>
 
             <section className="scroll-mt-24"  id="retain" >
-              <H4 className='dark:text-white my-4'> International Transfers</H4>
+              <H4 className=' my-4'> International Transfers</H4>
               <P>
               Your metadata may be processed on servers located in the United States or other regions where we operate. We ensure appropriate safeguards are in place for cross-border data transfers. 
               </P>
             </section>
 
             <section className="scroll-mt-24"  id="secure" >
-              <H4 className='dark:text-white my-4'>How Do We Keep Your Information Safe?</H4>
+              <H4 className=' my-4'>How Do We Keep Your Information Safe?</H4>
               <P>
                 We implement organizational and technical security measures to
                 protect your personal data. However, no method is 100% secure.
@@ -173,14 +173,14 @@ export default function PrivacyPolicyAI() {
             </section>
 
             <section className="scroll-mt-24"  id="minors" >
-              <H4 className='dark:text-white my-4'>Children’s Privacy</H4>
+              <H4 className=' my-4'>Children’s Privacy</H4>
               <P>
                Our services are for business use only and are not intended for individuals under 18. 
               </P>
             </section>
 
             <section className="scroll-mt-24"  id="rights" >
-              <H4 className='dark:text-white my-4'>What Are Your Privacy Rights?</H4>
+              <H4 className=' my-4'>What Are Your Privacy Rights?</H4>
               <P>
                 Depending on your location, you may have rights to access,
                 correct, or delete your personal information.
@@ -188,13 +188,13 @@ export default function PrivacyPolicyAI() {
             </section>
 
             <section className="scroll-mt-24"  id="dnt">
-               <H4 className='dark:text-white my-4'>Changes to this Policy</H4>
+               <H4 className=' my-4'>Changes to this Policy</H4>
               <P>
                We may update this policy periodically. The “Last Updated” date will reflect changes. 
               </P>
             </section>
               <section  id="cookie- policy" className="  scroll-mt-24  ">
-              <H1 className="dark:text-white mt-16 mb-2 text-3xl font-semibold">Cookie Policy for Qnest Global</H1>
+              <H1 className=" mt-16 mb-2 text-3xl font-semibold">Cookie Policy for Qnest Global</H1>
               <P className="text-sm text-gray-500">Effective Date: [Insert Date]</P>
               <P>
                 This Cookie Policy explains how Qnest Global uses cookies and similar tracking
@@ -203,7 +203,7 @@ export default function PrivacyPolicyAI() {
 
               {/* 1 */}
               <section className="scroll-mt-24"  id="cookie- what">
-                <H4 className="dark:text-white my-4">1. What are Cookies?</H4>
+                <H4 className=" my-4">1. What are Cookies?</H4>
                 <P>
                   Cookies are small text files stored on your device that help websites function
                   efficiently and provide analytics.
@@ -212,7 +212,7 @@ export default function PrivacyPolicyAI() {
 
               {/* 2 */}
               <section className="scroll-mt-24"  id="cookie- how">
-                <H4 className="dark:text-white my-4">2. How We Use Cookies</H4>
+                <H4 className=" my-4">2. How We Use Cookies</H4>
                 <P>
                   We use cookies to enhance security, analyze site traffic, and remember user
                   preferences for our dashboard.
@@ -221,52 +221,52 @@ export default function PrivacyPolicyAI() {
                 <div className="overflow-x-auto my-6">
                   <table className="w-full border-collapse text-sm">
                     <thead>
-                      <tr className="bg-gray-100  dark:bg-slate-800">
-                        <th className="border border-gray-300 font-quicksand text-[18px] dark:border-slate-600 px-4 py-3 text-left font-semibold text-gray-800 dark:text-white">
+                      <tr className="bg-gray-100   ">
+                        <th className="border border-gray-300 font-quicksand text-[18px]   px-4 py-3 text-left font-semibold text-gray-800 ">
                           Category
                         </th>
-                        <th className="border border-gray-300 font-quicksand text-[18px] dark:border-slate-600 px-4 py-3 text-left font-semibold text-gray-800 dark:text-white">
+                        <th className="border border-gray-300 font-quicksand text-[18px]   px-4 py-3 text-left font-semibold text-gray-800 ">
                           Purpose
                         </th>
-                        <th className="border border-gray-300 font-quicksand text-[18px] dark:border-slate-600 px-4 py-3 text-left font-semibold text-gray-800 dark:text-white">
+                        <th className="border border-gray-300 font-quicksand text-[18px]   px-4 py-3 text-left font-semibold text-gray-800 ">
                           Duration
                         </th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
-                        <td className="border border-gray-300 font-quicksand text-[18px] dark:border-slate-600 px-4 py-3 text-gray-700 dark:text-gray-300 font-medium align-top">
+                      <tr className="even:bg-gray-50  ">
+                        <td className="border border-gray-300 font-quicksand text-[18px]   px-4 py-3 text-gray-700 font-medium align-top">
                           Strictly Necessary
                         </td>
-                        <td className="border border-gray-300 font-quicksand text-[18px] dark:border-slate-600 px-4 py-3 text-gray-600 dark:text-gray-400 align-top">
+                        <td className="border border-gray-300 font-quicksand text-[18px]   px-4 py-3 text-gray-600  -400 align-top">
                           Essential for logging into the secure CloudDIET portal and navigating the
                           site (e.g., session IDs).
                         </td>
-                        <td className="border border-gray-300 font-quicksand text-[18px] dark:border-slate-600 px-4 py-3 text-gray-600 dark:text-gray-400 align-top whitespace-nowrap">
+                        <td className="border border-gray-300 font-quicksand text-[18px]   px-4 py-3 text-gray-600  -400 align-top whitespace-nowrap">
                           Session / Persistent
                         </td>
                       </tr>
-                      <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
-                        <td className="border border-gray-300 font-quicksand text-[18px] dark:border-slate-600 px-4 py-3 text-gray-700 dark:text-gray-300 font-medium align-top">
+                      <tr className="even:bg-gray-50  ">
+                        <td className="border border-gray-300 font-quicksand text-[18px]   px-4 py-3 text-gray-700 font-medium align-top">
                           Performance / Analytics
                         </td>
-                        <td className="border border-gray-300 font-quicksand text-[18px] dark:border-slate-600 px-4 py-3 text-gray-600 dark:text-gray-400 align-top">
+                        <td className="border border-gray-300 font-quicksand text-[18px]   px-4 py-3 text-gray-600  -400 align-top">
                           We use Google Analytics to count visits and see which parts of our
                           marketing site are most popular. This helps us improve our content.
                         </td>
-                        <td className="border border-gray-300 font-quicksand text-[18px] dark:border-slate-600 px-4 py-3 text-gray-600 dark:text-gray-400 align-top">
+                        <td className="border border-gray-300 font-quicksand text-[18px]   px-4 py-3 text-gray-600  -400 align-top">
                           Persistent
                         </td>
                       </tr>
-                      <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
-                        <td className="border border-gray-300 font-quicksand text-[18px] dark:border-slate-600 px-4 py-3 text-gray-700 dark:text-gray-300 font-medium align-top">
+                      <tr className="even:bg-gray-50  ">
+                        <td className="border border-gray-300 font-quicksand text-[18px]   px-4 py-3 text-gray-700 font-medium align-top">
                           Functionality
                         </td>
-                        <td className="border border-gray-300 font-quicksand text-[18px] dark:border-slate-600 px-4 py-3 text-gray-600 dark:text-gray-400 align-top">
+                        <td className="border border-gray-300 font-quicksand text-[18px]   px-4 py-3 text-gray-600  -400 align-top">
                           Remembers your login details and interface preferences so you don't have
                           to re-enter them.
                         </td>
-                        <td className="border border-gray-300 font-quicksand text-[18px] dark:border-slate-600 px-4 py-3 text-gray-600 dark:text-gray-400 align-top">
+                        <td className="border border-gray-300 font-quicksand text-[18px]   px-4 py-3 text-gray-600  -400 align-top">
                           Persistent
                         </td>
                       </tr>
@@ -277,7 +277,7 @@ export default function PrivacyPolicyAI() {
 
               {/* 3 */}
               <section className="scroll-mt-24"  id="cookie- control">
-                <H4 className="dark:text-white my-4">3. Your Control</H4>
+                <H4 className=" my-4">3. Your Control</H4>
                 <P>
                   Most web browsers allow you to control cookies through their settings. However,
                   disabling Strictly Necessary cookies may prevent you from logging into the
@@ -287,7 +287,7 @@ export default function PrivacyPolicyAI() {
 
               {/* 4 */}
               <section className="scroll-mt-24"  id="cookie- dnt">
-                <H4 className="dark:text-white my-4">4. Do-Not-Track Signals</H4>
+                <H4 className=" my-4">4. Do-Not-Track Signals</H4>
                 <P>
                   Our website does not currently respond to "Do-Not-Track" signals because no
                   uniform standard has been adopted.
@@ -296,7 +296,7 @@ export default function PrivacyPolicyAI() {
 
               {/* 5 */}
               <section className="scroll-mt-24"  id="cookie- contact">
-                <H4 className="dark:text-white my-4">5. Contact</H4>
+                <H4 className=" my-4">5. Contact</H4>
                 <P>
                   For cookie-related inquiries, please email{' '}
                   <a href="mailto:support@qnestglobal.com" className="text-blue-600 hover:underline">
@@ -306,12 +306,12 @@ export default function PrivacyPolicyAI() {
               </section>
             </section>
               <section   id="terms"   className="   scroll-mt-24  ">
-              <H1 className="dark:text-white mt-16 mb-2 text-3xl font-semibold">Terms and Conditions</H1>
+              <H1 className=" mt-16 mb-2 text-3xl font-semibold">Terms and Conditions</H1>
               <P className="text-sm text-gray-500">Last Updated: [15-04-2026]</P>
 
               {/* 1 */}
               <section className="scroll-mt-24"  id="terms-a cceptance">
-                <H4 className="dark:text-white my-4">1. Acceptance of Terms</H4>
+                <H4 className=" my-4">1. Acceptance of Terms</H4>
                 <P>
                   These Terms and Conditions (<strong>"Agreement"</strong>) govern your access to and use of the Qnest
                   Global CloudDIET platform (<strong>"Service"</strong>). By signing a Service Order or accessing the
@@ -321,7 +321,7 @@ export default function PrivacyPolicyAI() {
 
               {/* 2 */}
               <section className="scroll-mt-24"  id="terms-d escription">
-                <H4 className="dark:text-white my-4">2. Description of Service</H4>
+                <H4 className=" my-4">2. Description of Service</H4>
                 <P>
                   CloudDIET is an AI-driven Cloud FinOps engine. The Service profiles Customer's cloud environment
                   (AWS, Azure, GCP) by analyzing configuration metadata and billing data only. Qnest Global does not
@@ -331,7 +331,7 @@ export default function PrivacyPolicyAI() {
 
               {/* 3 */}
               <section className="scroll-mt-24"  id="terms-a ccess">
-                <H4 className="dark:text-white my-4">3. Access Requirements (Read-Only)</H4>
+                <H4 className=" my-4">3. Access Requirements (Read-Only)</H4>
                 <P>Customer must provide Qnest Global with a Read-Only Service Principal and User Account.</P>
                 <P>
                   Customer warrants that the credentials provided adhere to the principle of least privilege (e.g.,
@@ -345,8 +345,8 @@ export default function PrivacyPolicyAI() {
 
               {/* 4 */}
               <section className="scroll-mt-24"  id="terms-s avings">
-                <H4 className="dark:text-white my-4">4. Savings & Financial Performance</H4>
-                <ul className="list-disc list-inside dark:text-white py-4">
+                <H4 className=" my-4">4. Savings & Financial Performance</H4>
+                <ul className="list-disc list-inside  py-4">
                   <li className="text-[18px] font-quicksand">
                     <strong>Pay-for-Performance Model:</strong> Unless otherwise agreed in a Service Order, Qnest
                     Global charges a percentage of the verified "Realized Savings."
@@ -365,7 +365,7 @@ export default function PrivacyPolicyAI() {
 
               {/* 5 */}
               <section className="scroll-mt-24"  id="terms-i p">
-                <H4 className="dark:text-white my-4">5. Intellectual Property</H4>
+                <H4 className=" my-4">5. Intellectual Property</H4>
                 <P>
                   <strong>Our IP:</strong> The CloudDIET platform, profiling engines, algorithms, and recommendation
                   logic are the exclusive property of Qnest Global.
@@ -378,8 +378,8 @@ export default function PrivacyPolicyAI() {
 
               {/* 6 */}
               <section className="scroll-mt-24"  id="terms-f ees">
-                <H4 className="dark:text-white my-4">6. Fees and Payment</H4>
-                <ul className="list-disc list-inside dark:text-white py-4">
+                <H4 className=" my-4">6. Fees and Payment</H4>
+                <ul className="list-disc list-inside  py-4">
                   <li className="text-[18px] font-quicksand">
                     <strong>Setup & Baseline Fees:</strong> Fees for the initial 6-week profiling period are due as
                     outlined in the Order Form.
@@ -397,7 +397,7 @@ export default function PrivacyPolicyAI() {
 
               {/* 7 */}
               <section className="scroll-mt-24"  id="terms-c onfidentiality">
-                <H4 className="dark:text-white my-4">7. Confidentiality</H4>
+                <H4 className=" my-4">7. Confidentiality</H4>
                 <P>
                   Each party agrees to hold the other's Confidential Information (including pricing, savings data, and
                   internal architecture) in confidence and to use it solely for the purposes of this Agreement.
@@ -406,8 +406,8 @@ export default function PrivacyPolicyAI() {
 
               {/* 8 */}
               <section className="scroll-mt-24"  id="terms-t ermination">
-                <H4 className="dark:text-white my-4">8. Term and Termination</H4>
-                <ul className="list-disc list-inside dark:text-white py-4">
+                <H4 className=" my-4">8. Term and Termination</H4>
+                <ul className="list-disc list-inside  py-4">
                   <li className="text-[18px] font-quicksand">
                     <strong>Term:</strong> This Agreement begins on the Effective Date and continues for the Initial
                     Term specified in the Order Form (e.g., 12 months).
@@ -425,7 +425,7 @@ export default function PrivacyPolicyAI() {
 
               {/* 9 */}
               <section className="scroll-mt-24"  id="terms-d isclaimer">
-                <H4 className="dark:text-white my-4">9. Disclaimer of Warranties</H4>
+                <H4 className=" my-4">9. Disclaimer of Warranties</H4>
                 <P>
                   The service is provided <strong>"as is"</strong> and <strong>"as available."</strong> While we
                   strive for accuracy, Qnest Global does not warrant that the optimization recommendations will be
@@ -436,7 +436,7 @@ export default function PrivacyPolicyAI() {
 
               {/* 10 */}
               <section className="scroll-mt-24"  id="terms-l iability">
-                <H4 className="dark:text-white my-4">10. Limitation of Liability</H4>
+                <H4 className=" my-4">10. Limitation of Liability</H4>
                 <P>
                   To the maximum extent permitted by law, Qnest Global shall not be liable for any indirect,
                   incidental, special, or consequential damages, including lost profits or data loss. Our total
@@ -447,7 +447,7 @@ export default function PrivacyPolicyAI() {
 
               {/* 11 */}
               <section className="scroll-mt-24"  id="terms-g overning">
-                <H4 className="dark:text-white my-4">11. Governing Law</H4>
+                <H4 className=" my-4">11. Governing Law</H4>
                 <P>
                   This Agreement shall be governed by the laws of{' '}
                   <strong>[Your State/Country, e.g., Delaware]</strong>, without regard to conflict of laws
@@ -457,7 +457,7 @@ export default function PrivacyPolicyAI() {
 
               {/* 12 */}
               <section className="scroll-mt-24"  id="terms-c ontact">
-                <H4 className="dark:text-white my-4">12. Contact</H4>
+                <H4 className=" my-4">12. Contact</H4>
                 <P>
                   For legal notices, please contact us at{' '}
                   <a href="mailto:legal@qnestglobal.com" className="text-blue-600 hover:underline">
@@ -471,7 +471,7 @@ export default function PrivacyPolicyAI() {
           {/* TABLE OF CONTENTS */}
           <aside className="hidden lg:block">
             <div className="sticky top-24 rounded-xl border border-gray-200 p-6">
-              <H4 className="mb-4  dark:text-white text-sm font-semibold text-gray-900">
+              <H4 className="mb-4   text-sm font-semibold text-gray-900">
                 TABLE OF CONTENTS
               </H4>
               <ul className="space-y-3 text-sm">

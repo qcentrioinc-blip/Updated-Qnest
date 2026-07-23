@@ -55,7 +55,7 @@ const Benefits = () => {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-[150vh] dark:bg-[#141414] lg:min-h-[350vh] lg:pt-10 pb-20   "
+      className="relative w-full min-h-[150vh] lg:min-h-[350vh] lg:pt-10 pb-20   "
     >
       <div className="lg:sticky px-[40px] md:px-[60px] xl:px-[160px] lg:top-0 lg:h-screen pb-10 flex flex-col justify-center items-start">
        
@@ -79,13 +79,13 @@ const Benefits = () => {
                   className={`
                     py-8 px-6 cursor-pointer transition-all duration-500 ease-out border-l-4
                     ${isActive
-                      ? "bg-[#F1F1F1] dark:bg-teal-900 border-[#00AA72] opacity-100"
+                      ? "bg-[#F1F1F1]  border-[#00AA72] opacity-100"
                       : "bg-transparent border-transparent opacity-50 hover:opacity-80"
                     }
                   `}
                   style={{ borderRadius: "6px" }}
                 >
-                  <H4 className="font-bold text-xl dark:text-white text-gray-900">
+                  <H4 className="font-bold text-xl text-gray-900">
                     {point.title}
                   </H4>
                   <P className="mt-3 max-w-md text-gray-700">
@@ -118,8 +118,8 @@ const Benefits = () => {
           {points.map((point, i) => (
             <div key={i} className="flex flex-col gap-6">
               {/* Text Top */}
-              <div className="p-6 rounded-xl  dark:bg-[#141414] bg-[#F1F1F1] border-t-4 border-[#00AA72]">
-                <h3 className="font-bold dark:text-[#00AA72]   text-xl text-gray-900 mb-2">
+              <div className="p-6 rounded-xl   bg-[#F1F1F1] border-t-4 border-[#00AA72]">
+                <h3 className="font-bold   text-xl text-gray-900 mb-2">
                   {point.title}
                 </h3>
                 <P className="text-gray-700">{point.desc}</P>

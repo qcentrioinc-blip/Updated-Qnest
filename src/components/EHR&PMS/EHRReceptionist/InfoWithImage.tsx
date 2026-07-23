@@ -5,7 +5,7 @@ const InfoWithImage = () => {
   const easeOut = [0.4, 0, 0.2, 1] as const;
 
   return (
-    <section className="bg-[#f4fbfa] dark:bg-[#141414] py-4 overflow-hidden">
+    <section className="bg-[#f4fbfa]  py-4 overflow-hidden">
       <div className="px-[40px] md:px-[60px] xl:px-[160px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           {/* LEFT COLUMN */}

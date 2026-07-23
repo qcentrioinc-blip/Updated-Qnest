@@ -46,7 +46,7 @@ const AddingSubscriptions: React.FC = () => {
 
       <H3 className="my-4">Configuration Steps</H3>
 
-      <ol className="list-decimal dark:text-white list-inside space-y-6">
+      <ol className="list-decimal list-inside space-y-6">
         <li className="space-y-3 font-quadran font-regular leading-[120%] text-[10px] xl:text-[12px]">
           Log in to CloudDIET and navigate to Settings
           <img

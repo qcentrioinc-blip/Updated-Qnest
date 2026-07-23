@@ -6,7 +6,7 @@ import {
   useSpring,
   MotionValue,
 } from "framer-motion";
-import LazyVideo from "../../Global/LazyVideo";
+// import LazyVideo from "../../Global/LazyVideo";
 // import { H2 } from "../../../styles/Typography";
 import { H2 } from "../../../styles/Typography";
 
@@ -14,10 +14,10 @@ const text =
   "On average, CloudDIET customers save 30% of their Azure spend beyond existing Reserved Instances.";
 
 const images = [
-  "/AI-CloudFinOps/HomePage/cost.mp4",
-  "/AI-CloudFinOps/HomePage/data-cloud.mp4",
-  "/AI-CloudFinOps/HomePage/savings.mp4",
-  "/AI-CloudFinOps/HomePage/saving-strategy.mp4",
+  "/CloudDiet/HomePage/low_price.svg",
+  "/CloudDiet/HomePage/idea.svg",
+  "/CloudDiet/HomePage/web_optimization.svg",
+  "/CloudDiet/HomePage/sales_marketing.svg",
 ];
 
 export default function CTA() {
@@ -39,23 +39,23 @@ export default function CTA() {
   -------------------------------------------------- */
   const transforms = [
     {
-      x: useTransform(smoothProgress, [0, 1], [0, -470]),
-      y: useTransform(smoothProgress, [0, 1], [0, -150]),
+      x: useTransform(smoothProgress, [0, 1], [0, -550]),
+      y: useTransform(smoothProgress, [0, 1], [0, - 100]),
       r: -8,
     },
     {
-      x: useTransform(smoothProgress, [0, 1], [0, 470]),
-      y: useTransform(smoothProgress, [0, 1], [0, -150]),
+      x: useTransform(smoothProgress, [0, 1], [0, 550]),
+      y: useTransform(smoothProgress, [0, 1], [0, - 100]),
       r: 8,
     },
     {
-      x: useTransform(smoothProgress, [0, 1], [0, -470]),
-      y: useTransform(smoothProgress, [0, 1], [0, 150]),
+      x: useTransform(smoothProgress, [0, 1], [0, -550]),
+      y: useTransform(smoothProgress, [0, 1], [0,  100]),
       r: 6,
     },
     {
-      x: useTransform(smoothProgress, [0, 1], [0, 470]),
-      y: useTransform(smoothProgress, [0, 1], [0, 150]),
+      x: useTransform(smoothProgress, [0, 1], [0, 550]),
+      y: useTransform(smoothProgress, [0, 1], [0,  100]),
       r: -6,
     },
   ];
@@ -78,8 +78,8 @@ export default function CTA() {
       className="
         relative
         w-full
-        bg-white
-        min-h-[150px] lg:min-h-[500px]
+        bg-[#5CAE8326]
+        min-h-[150px] lg:min-h-[350px]
         overflow-hidden
         px-[40px] md:px-[60px] xl:px-[160px]
         md:py-20 lg:py-20
@@ -102,22 +102,19 @@ export default function CTA() {
             }}
             className="
               absolute
-              w-24 h-24
-              xl:w-32 xl:h-32
+              w-18 h-18
+              xl:w-24 xl:h-24
               rounded-xl
               overflow-hidden
               bg-transparent
               will-change-transform
             "
           >
-            <LazyVideo
-              src={src}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover bg-transparent"
-            />
+            <motion.img
+  src={src}
+  alt=""
+  className="w-full h-full object-contain"
+/>
           </motion.div>
         ))}
       </div>
@@ -163,8 +160,6 @@ export default function CTA() {
 -------------------------------- */
 const Character = memo(function Character({
   children,
-  // progress,
-  // range,
   highlight,
 }: {
   children: string;
@@ -172,14 +167,12 @@ const Character = memo(function Character({
   range: [number, number];
   highlight?: boolean;
 }) {
-
- 
-  
-
   return (
     <motion.span
       className={`inline-block ${
-        highlight ? "font-bold tracking-tight" : ""
+        highlight
+          ? "text-[#009565] font-extrabold tracking-tight"
+          : "text-black"
       } will-change-[color]`}
     >
       {children}
