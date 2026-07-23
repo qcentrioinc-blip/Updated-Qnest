@@ -1,6 +1,6 @@
 
 import { H2, P, } from "../../../styles/Typography";
-import linkedinLogo from "/linkedIn.png";
+// import linkedinLogo from "/linkedIn.png";
 import xLogo from "/Twitter.png";
 import { useEffect,useRef,useState } from "react";
 import { ArrowUpRight,ArrowRight } from "lucide-react";
@@ -125,7 +125,7 @@ const OverviewSection = () => {
           <div className="mt-8 space-y-4 items-start">
             <P className="text-[#141414] gray-600 font-semibold">Share Job</P>
             <div className="flex items-start gap-4">
-              <img src={linkedinLogo} alt="linkedIn" className="w-8 h-8 cursor-pointer hover:opacity-80" />
+              {/* <img src={linkedinLogo} alt="linkedIn" className="w-8 h-8 cursor-pointer hover:opacity-80" /> */}
               <img src={xLogo} alt="X" className="w-8 h-8 cursor-pointer hover:opacity-80" />
             </div>
           </div>
@@ -138,7 +138,7 @@ const OverviewSection = () => {
          shadow-[0_-2px_6px_rgba(0,0,0,0.1)] transition-transform duration-500">
           <div className="flex gap-4">
             <img
-              src={linkedinLogo}
+              // src={linkedinLogo}
               alt="linkedIn"
               className="w-8 h-8 cursor-pointer hover:opacity-80"
             />
