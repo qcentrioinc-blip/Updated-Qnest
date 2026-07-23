@@ -1,0 +1,654 @@
+@import "tailwindcss";
+
+
+@import "tailwindcss";
+
+
+/* 1. Set up the Tailwind v4 custom font family */
+@theme {
+  --font-quadran: "Quadran", sans-serif;
+}
+
+/* 2. Load the Quadran Font Weights */
+
+/* Light (300) */
+@font-face {
+  font-family: 'Quadran';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/Quadran-Light.ttf') format('truetype');
+}
+
+/* Regular (400) */
+@font-face {
+  font-family: 'Quadran';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Quadran-Regular.woff2') format('woff2'),
+       url('/fonts/Quadran-Regular.woff') format('woff');
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: 'Quadran';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/Quadran-Medium.woff2') format('woff2'),
+       url('/fonts/Quadran-Medium.woff') format('woff');
+}
+
+/* Medium Italic (500, Italic) */
+@font-face {
+  font-family: 'Quadran';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/Quadran-MediumItalic.woff2') format('woff2');
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: 'Quadran';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Quadran-Bold.woff2') format('woff2');
+}
+
+/* Make Quadran the default font for the whole project */
+html, body {
+  font-family: 'Quadran', sans-serif;
+}
+ 
+
+
+:root {
+  --primary-color: #00AA72;
+  --secondary-color: #FBD178;
+  -ms-overflow-style: none;
+  /* scrollbar-width: none; */
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+ 
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+ 
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+} */
+/* global.css ya index.css me */
+
+/*
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+} */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+}
+
+html {
+  /* Let Lenis handle smooth scrolling - CSS scroll-behavior conflicts with it */
+  scroll-behavior: auto;
+}
+
+#root {
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+}
+
+
+/* CRITICAL: Enable smooth scrolling for Lenis */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
+
+
+
+/* Scoped optimization class */
+.gpu-optimized {
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Performance optimizations for scroll */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img,
+video {
+  content-visibility: auto;
+}
+
+
+.group:hover,
+[class*="hover:"] {
+  transform: translateZ(0);
+}
+
+@keyframes waveFloat {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes cloudFloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes imageFadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.animate-cloud-float {
+  animation: cloudFloat 4s ease-in-out infinite;
+}
+
+.animate-cloud-float-slow {
+  animation: cloudFloat 9s ease-in-out infinite;
+}
+
+.animate-cloud-float-fast {
+  animation: cloudFloat 4.5s ease-in-out infinite;
+}
+
+
+
+
+.font-schibsted {
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+
+ 
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 2px #00AA72;
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes partner-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.partner-track {
+  animation: partner-scroll 30s linear infinite;
+  transform: translateZ(0);
+}
+
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hero-section {
+  position: relative;
+  z-index: 9999;
+}
+
+.pago-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: 0.4s ease;
+}
+
+@keyframes marquee-inner {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-inner-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-inner {
+  animation: marquee-inner 25s linear infinite;
+  min-width: 200%;
+}
+
+.animate-marquee-inner-reverse {
+  animation: marquee-inner-reverse 25s linear infinite;
+  min-width: 200%;
+}
+
+@keyframes marquee-inner {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-inner-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-inner {
+  animation: marquee-inner 25s linear infinite;
+  min-width: 200%;
+}
+
+.animate-marquee-inner-reverse {
+  animation: marquee-inner-reverse 25s linear infinite;
+  min-width: 200%;
+}
+
+.pago-navbar.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pago-navbar.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.liquid-ether-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+:root {
+
+  scroll-padding-top: 0px;
+}
+
+.fade-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.7s ease;
+}
+
+.fade-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-blue-visible {
+
+  transition: color 0.8s ease;
+}
+
+.wave-overlay {
+  opacity: var(--wave-opacity, 0.1);
+  transition: opacity 0.2s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.7s ease forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.7s ease forwards;
+}
+
+
+.product-image {
+  max-height: 360px;
+  object-fit: contain;
+  filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.15));
+}
+
+/* Woman image */
+.product-image-1 {
+  width: 52%;
+  transform: translate(8%, 8%);
+}
+
+/* Man image */
+.product-image-2 {
+  width: 55%;
+  transform: translate(6%, 6%);
+}
+.footer-fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+/* Shared image styling */
+.image-style-1,
+.image-style-2 {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  max-height: 420px;
+  object-fit: contain;
+
+ filter:
+  drop-shadow(0 8px 15px rgba(0,0,0,0.15))
+  drop-shadow(0 25px 45px rgba(0,0,0,0.12));
+}
+
+/* First image (woman) */
+.image-style-1 {
+  width: 58%;
+  right:-10px;
+
+  
+}
+
+/* Second image (man) */
+.image-style-2 {
+  width: 50%;
+  right:-44px;
+            /* Slightly more overflow */
+}
+
+
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 8s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: none !important;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+.marquee-track.dragging {
+  animation: none !important; /* 🔥 THIS is the fix */
+  cursor: grabbing;
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 4s linear infinite;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-sloww {
+  animation: spinSlow 40s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spinReverse 50s linear infinite;
+}
+/* ── Falling Waterfall Grid Background ── */
+/* Add this to your global CSS or a CSS module */
+
+.falling-grid-bg {
+  position: fixed; 
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #111111; 
+  pointer-events: none;
+}
+
+/* The grid itself */
+.falling-grid-bg::before {
+  content: "";
+  position: absolute;
+  /* Make the grid taller than viewport so the fall looks seamless */
+  inset: -100% 0 0 0;
+  height: 300%;
+
+  /* Grid lines — adjust 72px to make squares larger/smaller */
+  background-image:
+    linear-gradient(to right,  rgba(255,255,255,0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.055) 1px, transparent 1px);
+  background-size: 72px 72px; /* ← square size, change both values together */
+
+  /* Waterfall fall animation */
+  animation: gridFall 6s linear infinite;
+}
+
+@keyframes gridFall {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(33.333%); } /* = 1 tile-height of the 3x tall pseudo-el */
+}
+
+/* Optional: subtle fade at top & bottom edges so it blends nicely */
+.falling-grid-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(to bottom, #111111 0%, transparent 12%, transparent 88%, #111111 100%);
+  pointer-events: none;
+}
+
+
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+/* tailwindcss import moved to top of file */
