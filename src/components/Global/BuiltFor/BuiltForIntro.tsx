@@ -5,7 +5,7 @@ import ContactModal from "../../AIOptimization/Navbar/ContactModal";
 import ContactDrawer from "../../EHR&PMS/Navbar/ContactDrawer";
 
 // import { ArrowRight, ArrowUpRight } from "lucide-react";
-import { useTheme } from "../ThemeContext";
+// import { useTheme } from "../ThemeContext";
 
 type IntroStyle = {
   sectionBg: string;
@@ -145,7 +145,7 @@ const CONTENT_CONFIG: Record<string, Record<string, IntroContent>> = {
 };
 
 export default function BuiltForIntro() {
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
   const { industry, builtForType } = useParams<{
     industry: string;
     builtForType: string;

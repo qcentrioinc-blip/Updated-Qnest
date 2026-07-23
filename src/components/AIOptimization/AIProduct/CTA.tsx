@@ -1,4 +1,4 @@
-import { useRef, memo, useState, useEffect } from "react";
+import { useRef, memo } from "react";
 import {
   motion,
   useScroll,
@@ -163,8 +163,8 @@ export default function CTA() {
 -------------------------------- */
 const Character = memo(function Character({
   children,
-  progress,
-  range,
+  // progress,
+  // range,
   highlight,
 }: {
   children: string;

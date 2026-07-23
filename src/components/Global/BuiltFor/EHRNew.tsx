@@ -3,7 +3,7 @@ import ComplianceIcon from "/BuiltFor/team.svg";
 import BillingIcon from "/BuiltFor/database-management.svg";
 import { H2, H3, P } from "../../../styles/Typography";
 import { useParams } from "react-router-dom";
-import { useTheme } from "../ThemeContext";
+// import { useTheme } from "../ThemeContext";
 
 // Types for card configuration
 type CardConfig = {
@@ -261,21 +261,21 @@ const SECTION_CONFIG: Record<string, Record<string, SectionConfig>> = {
 };
 
 // Unified styles - consistent across all industries
-const UNIFIED_STYLES = {
-  light: {
-    sectionBg: "#ffffff",
-    headingColor: "#00AA72",
-    cardBg: "#ffffff",
-    cardBorderColor: "#E5E7EB",
-    cardTopBorderColor: "#00AA72",
-    cardTitleColor: "#141414",
-    cardDescriptionColor: "#6B7280",
-  },
+// const UNIFIED_STYLES = {
+//   light: {
+//     sectionBg: "#ffffff",
+//     headingColor: "#00AA72",
+//     cardBg: "#ffffff",
+//     cardBorderColor: "#E5E7EB",
+//     cardTopBorderColor: "#00AA72",
+//     cardTitleColor: "#141414",
+//     cardDescriptionColor: "#6B7280",
+//   },
   
-};
+
 
 const EHRNew = () => {
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
   const { industry, builtForType } = useParams<{
     industry: string;
     builtForType: string;
